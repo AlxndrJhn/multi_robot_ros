@@ -1,0 +1,8 @@
+prefix=/home/alexj/Dropbox/UFMG/04-2-2016/JornalPaper/02-code/03-ros_ws_latpop_new/install
+
+Name: camera_controller
+Description: Description of camera_controller
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/alexj/Dropbox/UFMG/04-2-2016/JornalPaper/02-code/03-ros_ws_latpop_new/install/lib 
+Requires: 

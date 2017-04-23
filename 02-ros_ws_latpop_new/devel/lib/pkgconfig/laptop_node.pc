@@ -1,0 +1,8 @@
+prefix=/home/alexj/Dropbox/UFMG/04-2-2016/JornalPaper/02-code/03-ros_ws_latpop_new/devel
+
+Name: laptop_node
+Description: Description of laptop_node
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/alexj/Dropbox/UFMG/04-2-2016/JornalPaper/02-code/03-ros_ws_latpop_new/devel/lib 
+Requires: 

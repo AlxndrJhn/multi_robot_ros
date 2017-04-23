@@ -1,0 +1,2 @@
+agent:ar_track_alvar_msgs-indigo-devel
+-DCATKIN_DEVEL_PREFIX=/home/alexj/Dropbox/UFMG/04-2-2016/JornalPaper/02-code/01-ros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/alexj/Dropbox/UFMG/04-2-2016/JornalPaper/02-code/01-ros_ws/install -G Unix Makefiles

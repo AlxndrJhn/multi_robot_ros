@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "camera_controller")
+set(camera_controller_MAINTAINER "ramonmelo <ramonmelo@todo.todo>")
+set(camera_controller_DEPRECATED "")
+set(camera_controller_VERSION "0.0.0")
+set(camera_controller_BUILD_DEPENDS "rospy")
+set(camera_controller_RUN_DEPENDS "rospy")
+set(camera_controller_BUILDTOOL_DEPENDS "catkin")

@@ -1,0 +1,58 @@
+from util.svg_to_map import svg_to_map
+
+
+class Experiment:
+    #def __init__(self, map, X, U, q_init, shape_name, goal_distance, n_robots, robot_vel, tree_edge_dt=1, robot_size=0,
+    #             shape_params={},controller_params={}, other_params = {}):
+    def __init__(self, *args, **kwargs):
+        self.shape_params =  kwargs.get('shape_params',{})
+        self.robot_size =  kwargs.get('robot_size',0.)
+        self.robot_vel =  kwargs.get('robot_vel')
+        self.n_robots =  kwargs.get('n_robots')
+        self.goal_distance =  kwargs.get('goal_distance')
+        self.shape_name =  kwargs.get('shape_name')
+        self.U =  kwargs.get('U')
+        self.X =  kwargs.get('X')  # state_space
+        self.map_init =  kwargs.get('map_init')
+        self.map_init_file = kwargs.get('map_init_file')
+        self.map_real =  kwargs.get('map_real')
+        self.map_real_file =  kwargs.get('map_real_file')
+        self.controller_params =  kwargs.get('controller_params',{})
+        self.tree_edge_dt =  kwargs.get('tree_edge_dt',1.)
+        self.other_params =  kwargs.get('other_params',{})
+
+        if len(self.map_init)==4:
+            E, Obs, start, goal = self.map_init
+        else:
+            E, Obs, Obs_type, start, goal = self.map_init
+
+        ## Override map values
+        self.q_init = [0.,0.]
+        self.q_init[0], self.q_init[1] = start
+
+        # state space based on map boundaries
+        w, h = E.bounds[2], E.bounds[3]
+        self.X[0] = (0, w)
+        self.X[1] = (0, h)
+
+experiments = \
+    [
+        # 1 Jornal extension, static map with discoverable obstacle (blue) and fixed obstacles (black), slightly more difficult
+        Experiment(map_init = svg_to_map('01-simple_init.svg'),
+                   map_real = svg_to_map('01-simple_real.svg'),
+                   X=[(0, -1), (0, -1), (12., 21.),
+                      (-7., 7.), (-7., 7.), (-10., 10.)],
+                   U=((-3.5, 3.5), (-3.5, 3.5), (-3.5, 3.5)),
+                   shape_name='ellipse_shape',
+                   shape_params={'area': 706.86},  # = pi*15**2
+                   goal_distance=5.0,
+                   robot_vel=1000.,
+                   n_robots=5,
+                   robot_size=4,
+                   controller_params={'dt_fine': 0.0085, 'kp': 45.05, 'kphi': 20.5, 'Omeg': 4.84,
+                                      'init x': [44., 37., 49., 28., 17.], 'init y': [21., 38., 34., 5., 6.]},
+                   tree_edge_dt=1.,
+                   other_params={'robot_sense_range': 0.5, 'robot_sense_type':'circle'}
+                   ),
+
+    ]

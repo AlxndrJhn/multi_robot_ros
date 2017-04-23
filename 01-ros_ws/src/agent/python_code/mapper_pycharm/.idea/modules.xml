@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../../../../04-eval/.idea/04-eval.iml" filepath="$PROJECT_DIR$/../../../../../04-eval/.idea/04-eval.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/mapper_pycharm.iml" filepath="$PROJECT_DIR$/.idea/mapper_pycharm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../../morse_sim/.idea/morse_sim.iml" filepath="$PROJECT_DIR$/../../../../../morse_sim/.idea/morse_sim.iml" />
+    </modules>
+  </component>
+</project>

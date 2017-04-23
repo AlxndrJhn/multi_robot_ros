@@ -1,0 +1,87 @@
+<launch>
+
+    <!-- Camera System -->
+	<arg name="camera_frame" default="usb_cam_frame"/>
+	<arg name="video_device" default="/dev/video0"/>
+	<arg name="camera_node_name" default="usb_cam_node"/>
+
+	<node pkg="camera_controller" type="frame_broadcaster.py" name="fixed_broadcaster">
+		<param name="target_frame" type="string" value="$(arg camera_frame)" />
+	</node>
+
+	<node pkg="usb_cam" type="usb_cam_node" name="$(arg camera_node_name)">
+		<param name="video_device" type="string" value="$(arg video_device)"/>
+
+		<param name="pixel_format" type="string" value="yuyv" /><!-- mjpeg -->
+		<param name="io_method" type="string" value="mmap" />
+
+		<param name="image_width" type="int" value="640" /><!-- 640 1280 -->
+		<param name="image_height" type="int" value="480" /><!-- 480 800 -->
+
+		<param name="camera_frame_id" type="string" value="$(arg camera_frame)" />
+		<param name="camera_info_url" type="string" value="file://$(find camera_controller)/config/usb_cam_640x480.yaml" />
+		<!--<param name="camera_info_url" type="string" value="file://$(find camera_controller)/config/usb_cam_1280x800.yaml" />-->
+	</node>
+
+	<node pkg="image_view" type="image_view" name="image_view">
+		<remap from="/image" to="/$(arg camera_node_name)/image_raw"/>
+	</node>
+
+    <!-- Marker Controller -->
+
+	<node pkg="marker_controller" type="pose_remap.py" name="pose_remap">
+	</node>
+
+	<arg name="marker_size" default="5" />
+	<arg name="max_new_marker_error" default="0.08" />
+	<arg name="max_track_error" default="0.2" />
+	<arg name="cam_image_topic" default="/$(arg camera_node_name)/image_raw" />
+	<arg name="cam_info_topic" default="/$(arg camera_node_name)/camera_info" />
+	<arg name="output_frame" default="/$(arg camera_frame)" />
+
+	<node name="ar_track_alvar" pkg="ar_track_alvar" type="individualMarkersNoKinect" respawn="false" output="screen" args="$(arg marker_size) $(arg max_new_marker_error) $(arg max_track_error) $(arg cam_image_topic) $(arg cam_info_topic) $(arg output_frame)">
+	</node>
+
+    <!-- Epuck Controller 
+    <arg name="epuck_address" default="10:00:E8:6C:D7:C8"/>
+    <arg name="epuck_name" default="epuck_robot_0"/>
+    <arg name="cam_en" default="false"/>
+    <arg name="acc_en" default="false"/>
+    <arg name="prox_en" default="false"/>
+    <arg name="mot_pos_en" default="false"/>
+    <arg name="light_en" default="false"/>
+    <arg name="floor_en" default="false"/>
+	<arg name="sel_en" default="false"/>
+	<arg name="mot_speed_en" default="true"/>
+	<arg name="mic_en" default="false"/>
+	<arg name="xpos" default="0.0"/>
+	<arg name="ypos" default="0.0"/>
+	<arg name="theta" default="0.0"/>
+	<arg name="is_single_robot" default="1" />
+
+    <node pkg="epuck_driver" type="epuck_driver.py" name="$(arg epuck_name)" output="screen">
+        <param name="epuck_address" value="$(arg epuck_address)"/>
+        <param name="epuck_name" value="$(arg epuck_name)"/>
+        <param name="camera" value="$(arg cam_en)"/>
+        <param name="accelerometer" value="$(arg acc_en)"/>
+        <param name="proximity" value="$(arg prox_en)"/>
+        <param name="motor_position" value="$(arg mot_pos_en)"/>
+        <param name="light" value="$(arg light_en)"/>
+        <param name="floor" value="$(arg floor_en)"/>
+		<param name="selector" value="$(arg sel_en)"/>
+		<param name="motor_speed" value="$(arg mot_speed_en)"/>
+		<param name="microphone" value="$(arg mic_en)"/>
+		<param name="xpos" value="$(arg xpos)"/>
+		<param name="ypos" value="$(arg ypos)"/>
+		<param name="theta" value="$(arg theta)"/>
+    </node>
+
+    <param name="robot_description" textfile="$(find epuck_driver)/urdf/epuck_urdf.xml"/>
+
+    <node name="epuck_state_publisher" pkg="robot_state_publisher" type="state_publisher">
+        <param name="tf_prefix" value="$(arg epuck_name)" />
+    </node>-->
+
+    <!--node if="$(arg is_single_robot)" pkg="rviz" type="rviz" output="screen" name="rviz" args="-d $(find epuck_driver)/config/single_epuck_driver_rviz.rviz"/-->
+
+</launch>

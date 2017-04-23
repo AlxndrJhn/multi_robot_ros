@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "marker_controller")
+set(marker_controller_MAINTAINER "ramonmelo <ramonmelo@todo.todo>")
+set(marker_controller_DEPRECATED "")
+set(marker_controller_VERSION "0.0.0")
+set(marker_controller_BUILD_DEPENDS "message_generation" "rospy")
+set(marker_controller_RUN_DEPENDS "message_runtime" "rospy")
+set(marker_controller_BUILDTOOL_DEPENDS "catkin")

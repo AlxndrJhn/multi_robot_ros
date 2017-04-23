@@ -1,0 +1,8 @@
+prefix=/home/alexj/Dropbox/UFMG/04-2-2016/JornalPaper/02-code/03-ros_ws_latpop_new/install
+
+Name: epuck_driver
+Description: Description of epuck_driver
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/alexj/Dropbox/UFMG/04-2-2016/JornalPaper/02-code/03-ros_ws_latpop_new/install/lib -lepuck_driver
+Requires: geometry_msgs rospy std_msgs cv_bridge roscpp sensor_msgs tf

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="193"
+   height="121"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="06-VerlabTable_init.svg">
+  <defs
+     id="defs28" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1600"
+     inkscape:window-height="825"
+     id="namedview26"
+     showgrid="false"
+     inkscape:zoom="5.398374"
+     inkscape:cx="96.5"
+     inkscape:cy="60.5"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g12" />
+  <metadata
+     id="metadata7">image/svg+xmlimage/svg+xmlbackground<rdf:RDF>
+  <cc:Work
+     rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <title
+     id="title5">background</title>
+  <g
+     id="g7">
+    <title
+       id="title9">background</title>
+    <rect
+       fill="none"
+       id="canvas_background"
+       height="123"
+       width="195"
+       y="-1"
+       x="-1" />
+  </g>
+  <g
+     id="g12">
+    <title
+       id="title14">Layer 1</title>
+    <ellipse
+       ry="3.19586"
+       rx="2.98968"
+       id="svg_12"
+       cy="60.269029"
+       cx="23.128128"
+       stroke-opacity="null"
+       stroke-width="null"
+       stroke="null"
+       fill="#c48157" />
+    <ellipse
+       ry="3.1958599"
+       rx="2.7834899"
+       id="svg_9"
+       cy="56.825027"
+       cx="173.04994"
+       stroke-opacity="null"
+       stroke-width="null"
+       stroke="null"
+       sodipodi:cx="173.04994"
+       sodipodi:cy="56.825027"
+       sodipodi:rx="2.7834899"
+       sodipodi:ry="3.1958599"
+       transform="translate(-4.886076,3.9699367)"
+       style="fill:#b8d078" />
+    <rect
+       id="svg_5"
+       height="121"
+       width="5"
+       y="0"
+       x="0"
+       fill-opacity="null"
+       stroke-opacity="null"
+       stroke="null"
+       stroke-width="1.5"
+       fill="#000000" />
+    <rect
+       id="svg_8"
+       height="5"
+       width="193"
+       y="0"
+       x="0"
+       fill-opacity="null"
+       stroke-opacity="null"
+       stroke="null"
+       stroke-width="1.5"
+       fill="#000000" />
+    <rect
+       id="svg_3"
+       height="31.891878"
+       width="9.9678516"
+       y="40.75404"
+       x="140.1196"
+       fill-opacity="null"
+       stroke-opacity="null"
+       stroke="null"
+       style="fill:#000000;stroke-width:1.5" />
+    <rect
+       id="svg_11"
+       height="64.530533"
+       width="17.560974"
+       y="9.570406"
+       x="86.488663"
+       fill-opacity="null"
+       stroke-opacity="null"
+       stroke="null"
+       style="fill:#000000;stroke-width:1.5" />
+    <rect
+       id="svg_13"
+       height="18.706726"
+       width="17.560975"
+       y="24.054839"
+       x="163.14263"
+       fill-opacity="null"
+       stroke-opacity="null"
+       stroke="null"
+       stroke-width="1.5"
+       fill="#000000" />
+    <rect
+       id="svg_1"
+       height="121"
+       width="5"
+       y="0.444444"
+       x="188"
+       fill-opacity="null"
+       stroke-opacity="null"
+       stroke="null"
+       stroke-width="1.5"
+       fill="#000000" />
+    <rect
+       id="svg_2"
+       height="5"
+       width="193"
+       y="116"
+       x="0.444444"
+       fill-opacity="null"
+       stroke-opacity="null"
+       stroke="null"
+       stroke-width="1.5"
+       fill="#000000" />
+    <rect
+       id="svg_4"
+       height="18.706726"
+       width="17.560975"
+       y="20.054863"
+       x="46.571891"
+       fill-opacity="null"
+       stroke-opacity="null"
+       stroke="null"
+       stroke-width="1.5"
+       fill="#000000" />
+  </g>
+</svg>

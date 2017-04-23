@@ -1,0 +1,43 @@
+<launch>
+    <!-- Fundamental ROS parameters -->
+    <param name="simulated_robots" value="false"/>
+    <param name="EXPNUM" value="4"/>
+
+    <arg name="robotID0" value="1"/>
+    <arg name="robotID1" value="2"/>
+    <arg name="robotID2" value="3"/>
+    <arg name="robotID3" value="6"/>
+    <arg name="robotID4" value="7"/>
+    
+    <param name="init_pos" value="True"/> <!-- the controller node takes care of that -->
+    <arg name="id" value="1"/> <!-- the controller node takes care of that -->
+    
+    <!-- Map servers -->
+    <node name="map_server_$(arg id)" pkg="agent" type="map_server_node.py" output="screen">
+        <param name="ID" type="int" value="$(arg id)" />
+    </node>
+    
+
+    
+    <!-- Planners -->
+    <node name="planner_$(arg id)" pkg="agent" type="planner_node.py" output="screen">
+        <param name="ID" type="int" value="$(arg id)" />
+    </node>
+        
+    <!-- Consensus Nodes -->
+    <node name="consensus_$(arg id)" pkg="agent" type="consensus_node.py" output="screen">
+        <param name="ID" type="int" value="$(arg id)" />
+    </node>
+        
+    <!--Controllers -->
+    <node name="controller_$(arg id)" pkg="agent" type="controller_node.py" output="screen">
+        <param name="ID" type="int" value="$(arg id)" />
+        <param name="epucknum" type="int" value="$(arg robotID1)" />
+        <param name="leftepucknum" type="int" value="$(arg robotID0)" />
+        <param name="rightepucknum" type="int" value="$(arg robotID2)" />
+    </node>
+
+
+    
+</launch>
+

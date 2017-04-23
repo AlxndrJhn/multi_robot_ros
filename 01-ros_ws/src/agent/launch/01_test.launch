@@ -1,0 +1,4 @@
+<launch>
+  <node name="mux0_map" pkg="topic_tools" type="mux" args="/planner_0/map /map_server_0/map"/>
+  <node name="mux0_mask" pkg="topic_tools" type="mux" args="/planner_0/map_mask /map_server_0/map_mask"/>
+</launch>

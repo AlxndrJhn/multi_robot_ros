@@ -1,0 +1,2748 @@
+... logging to /home/alexj/.ros/log/bba6e808-fc72-11e6-92cc-c86000ca4b59/roslaunch-magritte-11255.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://magritte:52127/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /EXPNUM: 4
+ * /consensus_0/ID: 0
+ * /consensus_1/ID: 1
+ * /consensus_2/ID: 2
+ * /consensus_3/ID: 3
+ * /consensus_4/ID: 4
+ * /controller_0/ID: 0
+ * /controller_0/epucknum: 1
+ * /controller_0/leftepucknum: 2
+ * /controller_0/rightepucknum: 5
+ * /controller_1/ID: 1
+ * /controller_1/epucknum: 2
+ * /controller_1/leftepucknum: 3
+ * /controller_1/rightepucknum: 1
+ * /controller_2/ID: 2
+ * /controller_2/epucknum: 3
+ * /controller_2/leftepucknum: 6
+ * /controller_2/rightepucknum: 2
+ * /controller_3/ID: 3
+ * /controller_3/epucknum: 6
+ * /controller_3/leftepucknum: 5
+ * /controller_3/rightepucknum: 3
+ * /controller_4/ID: 4
+ * /controller_4/epucknum: 5
+ * /controller_4/leftepucknum: 1
+ * /controller_4/rightepucknum: 6
+ * /init_pos: True
+ * /map_server_0/ID: 0
+ * /map_server_0/epucknum: 1
+ * /map_server_1/ID: 1
+ * /map_server_1/epucknum: 2
+ * /map_server_2/ID: 2
+ * /map_server_2/epucknum: 3
+ * /map_server_3/ID: 3
+ * /map_server_3/epucknum: 6
+ * /map_server_4/ID: 4
+ * /map_server_4/epucknum: 5
+ * /planner_0/ID: 0
+ * /planner_1/ID: 1
+ * /planner_2/ID: 2
+ * /planner_3/ID: 3
+ * /planner_4/ID: 4
+ * /rosdistro: indigo
+ * /rosversion: 1.11.20
+ * /simulated_robots: False
+
+NODES
+  /
+    consensus_0 (agent/consensus_node.py)
+    consensus_1 (agent/consensus_node.py)
+    consensus_2 (agent/consensus_node.py)
+    consensus_3 (agent/consensus_node.py)
+    consensus_4 (agent/consensus_node.py)
+    controller_0 (agent/controller_node.py)
+    controller_1 (agent/controller_node.py)
+    controller_2 (agent/controller_node.py)
+    controller_3 (agent/controller_node.py)
+    controller_4 (agent/controller_node.py)
+    map_server_0 (agent/map_server_node.py)
+    map_server_1 (agent/map_server_node.py)
+    map_server_2 (agent/map_server_node.py)
+    map_server_3 (agent/map_server_node.py)
+    map_server_4 (agent/map_server_node.py)
+    planner_0 (agent/planner_node.py)
+    planner_1 (agent/planner_node.py)
+    planner_2 (agent/planner_node.py)
+    planner_3 (agent/planner_node.py)
+    planner_4 (agent/planner_node.py)
+
+ROS_MASTER_URI=http://localhost:11311
+
+core service [/rosout] found
+process[map_server_0-1]: started with pid [11273]
+process[map_server_1-2]: started with pid [11281]
+process[map_server_2-3]: started with pid [11290]
+process[map_server_3-4]: started with pid [11307]
+process[map_server_4-5]: started with pid [11318]
+process[planner_0-6]: started with pid [11332]
+process[planner_1-7]: started with pid [11337]
+process[planner_2-8]: started with pid [11359]
+/map_server_0 registered
+process[planner_3-9]: started with pid [11380]
+/map_server_0 published initial map
+/map_server_0 published initial mask
+/map_server_0 published initial map without the prior
+/map_server_1 registered
+/map_server_2 registered
+process[planner_4-10]: started with pid [11448]
+/map_server_1 published initial map
+/map_server_1 published initial mask
+/map_server_1 published initial map without the prior
+/map_server_2 published initial map
+/map_server_2 published initial mask
+/map_server_2 published initial map without the prior
+process[consensus_0-11]: started with pid [11539]
+/map_server_4 registered
+process[consensus_1-12]: started with pid [11633]
+/map_server_3 registered
+/map_server_4 published initial map
+/map_server_4 published initial mask
+/map_server_4 published initial map without the prior
+/map_server_3 published initial map
+/map_server_3 published initial mask
+/map_server_3 published initial map without the prior
+process[consensus_2-13]: started with pid [11687]
+process[consensus_3-14]: started with pid [11783]
+process[consensus_4-15]: started with pid [11876]
+process[controller_0-16]: started with pid [11884]
+/planner_1 registered
+process[controller_1-17]: started with pid [11916]
+/planner_0 registered
+/planner_1 waiting for maps to start preparing 2.0 secs
+/planner_0 waiting for maps to start preparing 2.0 secs
+process[controller_2-18]: started with pid [11996]
+process[controller_3-19]: started with pid [12020]
+/planner_3 registered
+process[controller_4-20]: started with pid [12048]
+/planner_3 waiting for maps to start preparing 2.0 secs
+/planner_2 registered
+/planner_2 waiting for maps to start preparing 2.0 secs
+/consensus_0 registered
+/planner_4 registered
+/planner_4 waiting for maps to start preparing 2.0 secs
+/planner_1 starting pre time planning for 2.0 secs
+/consensus_1 registered
+/planner_0 starting pre time planning for 2.0 secs
+/consensus_3 registered
+/consensus_2 registered
+/planner_3 starting pre time planning for 2.0 secs
+/controller_1 registered
+/controller_1 left epuck: 3 right epuck: 1
+/controller_1 left: 0 right: 2
+/controller_1 omeg 6.0 kp 20.0 kphi 30.0
+/consensus_4 registered
+/controller_0 registered
+/controller_0 left epuck: 2 right epuck: 5
+/controller_0 left: 4 right: 1
+/controller_0 omeg 6.0 kp 20.0 kphi 30.0
+/planner_2 starting pre time planning for 2.0 secs
+/controller_3 registered
+/controller_3 left epuck: 5 right epuck: 3
+/controller_3 left: 2 right: 4
+/controller_3 omeg 6.0 kp 20.0 kphi 30.0
+/controller_1 starting initialization
+/controller_1 arrived at initial point
+/controller_2 registered
+/controller_2 left epuck: 6 right epuck: 2
+/controller_2 left: 1 right: 3
+/controller_2 omeg 6.0 kp 20.0 kphi 30.0
+/controller_0 starting initialization
+/controller_0 arrived at initial point
+/planner_4 starting pre time planning for 2.0 secs
+/controller_4 registered
+/controller_4 left epuck: 1 right epuck: 6
+/controller_4 left: 3 right: 0
+/controller_4 omeg 6.0 kp 20.0 kphi 30.0
+/controller_3 going back into view of camera
+/controller_2 starting initialization
+/controller_2 arrived at initial point
+/controller_4 starting initialization
+/controller_4 arrived at initial point
+/planner_1 pre time finished with 239 nodes
+/planner_0 pre time finished with 235 nodes
+/planner_3 pre time finished with 214 nodes
+/controller_3 better?
+/planner_2 pre time finished with 238 nodes
+/planner_4 pre time finished with 248 nodes
+/controller_3 starting initialization
+/controller_3 dist 0.122m, angle diff 0031deg, speed 2.017, turnrate  0.270, AR 6
+/controller_3 dist 0.025m, angle diff -011deg, speed 0.468, turnrate -0.100, AR 6
+/controller_3 arrived at initial point
+/controller_3 initialization finished
+/controller_2 initialization finished
+/controller_1 initialization finished
+/controller_4 initialization finished
+/controller_0 initialization finished
+/controller_2 v 1.8 w -0.8 e_rho -3.566 e_phi 13.058 angle(v) 66.0
+/controller_4 v 1.8 w 0.185 e_rho -4.293 e_phi 4.172 angle(v) -124.0
+/controller_0 v 1.326 w 0.8 e_rho -0.76 e_phi 9.34 angle(v) -100.0
+/controller_1 v 1.155 w -0.8 e_rho -2.842 e_phi -8.756 angle(v) 76.0
+/controller_3 v 1.414 w 0.525 e_rho -0.447 e_phi -17.776 angle(v) -56.0
+/planner_4 won consensus of iteration # 1.0 with cost 157.263812857
+
+/planner_0 won consensus of iteration # 2.0 with cost 133.688016533
+
+/controller_2 v 0.906 w -0.239 e_rho -0.515 e_phi 0.225 angle(v) 101.0
+/controller_4 v 1.431 w -0.018 e_rho -0.803 e_phi 2.454 angle(v) -119.0
+/controller_1 v 0.631 w 0.036 e_rho -0.293 e_phi -1.114 angle(v) 24.0
+/controller_3 v 0.464 w 0.046 e_rho -0.094 e_phi -1.632 angle(v) 152.0
+/controller_0 v 0.635 w 0.088 e_rho -0.132 e_phi -0.119 angle(v) -66.0
+/planner_2 won consensus of iteration # 3.0 with cost 131.597148014
+
+/planner_2 won consensus of iteration # 4.0 with cost 131.597148014
+
+/controller_3 v 0.478 w 0.064 e_rho -0.007 e_phi -1.197 angle(v) -178.0
+/controller_2 v 0.559 w 0.063 e_rho -0.031 e_phi -0.465 angle(v) 112.0
+/controller_4 v 0.815 w -0.005 e_rho -0.128 e_phi 1.564 angle(v) -101.0
+/controller_0 v 0.526 w 0.041 e_rho 0.084 e_phi -0.561 angle(v) -45.0
+/controller_1 v 0.475 w 0.042 e_rho -0.056 e_phi -1.39 angle(v) 44.0
+/planner_1 won consensus of iteration # 5.0 with cost 151.106401953
+
+/planner_0 won consensus of iteration # 6.0 with cost 128.424065108
+
+/controller_1 v 0.624 w 0.114 e_rho -0.108 e_phi -0.074 angle(v) 83.0
+/controller_2 v 0.624 w 0.052 e_rho -0.009 e_phi 0.236 angle(v) 147.0
+/controller_4 v 0.582 w -0.004 e_rho 0.002 e_phi -0.17 angle(v) -71.0
+/controller_3 v 0.525 w 0.067 e_rho -0.026 e_phi -0.784 angle(v) -138.0
+/controller_0 v 0.581 w 0.048 e_rho -0.028 e_phi -0.259 angle(v) 4.0
+/planner_3 won consensus of iteration # 7.0 with cost 137.263814681
+
+/planner_0 won consensus of iteration # 8.0 with cost 137.442879805
+
+/controller_0 v 0.691 w 0.102 e_rho -0.095 e_phi 0.611 angle(v) 45.0
+/controller_1 v 0.54 w 0.067 e_rho -0.092 e_phi -0.879 angle(v) 123.0
+/controller_3 v 0.614 w 0.078 e_rho -0.157 e_phi -0.451 angle(v) -89.0
+/controller_2 v 0.55 w 0.057 e_rho -0.022 e_phi -0.533 angle(v) -173.0
+/controller_4 v 0.624 w 0.03 e_rho -0.045 e_phi 0.096 angle(v) -29.0
+/planner_3 won consensus of iteration # 9.0 with cost 141.263814681
+
+/planner_0 won consensus of iteration # 10.0 with cost 141.263814681
+
+/controller_0 v 0.888 w -0.074 e_rho 0.037 e_phi 3.069 angle(v) 71.0
+/controller_1 v 0.444 w 0.048 e_rho -0.042 e_phi -1.648 angle(v) 156.0
+/controller_4 v 0.28 w 0.101 e_rho -0.056 e_phi -3.153 angle(v) 20.0
+/controller_3 v 0.65 w 0.032 e_rho 0.021 e_phi 0.577 angle(v) -68.0
+/controller_2 v 0.581 w 0.021 e_rho -0.006 e_phi -0.203 angle(v) -138.0
+/planner_3 won consensus of iteration # 11.0 with cost 128.424065108
+
+/planner_0 won consensus of iteration # 12.0 with cost 117.224065108
+
+/controller_1 v 0.573 w 0.06 e_rho -0.054 e_phi -0.412 angle(v) -165.0
+/controller_0 v 0.622 w 0.107 e_rho -0.057 e_phi 0.112 angle(v) 121.0
+/controller_3 v 0.531 w 0.054 e_rho 0.029 e_phi -0.591 angle(v) -30.0
+/controller_4 v 0.531 w 0.081 e_rho -0.115 e_phi -1.033 angle(v) 57.0
+/controller_2 v 0.573 w 0.074 e_rho -0.135 e_phi -0.732 angle(v) -85.0
+/planner_0 won consensus of iteration # 13.0 with cost 128.423088814
+
+/planner_4 won consensus of iteration # 14.0 with cost 115.224065113
+
+/controller_2 v 0.662 w 0.059 e_rho -0.001 e_phi 0.479 angle(v) -65.0
+/controller_1 v 0.515 w 0.145 e_rho -0.239 e_phi -1.72 angle(v) -106.0
+/controller_4 v 0.467 w -0.018 e_rho 0.142 e_phi -1.396 angle(v) 64.0
+/controller_3 v 0.749 w 0.019 e_rho 0.028 e_phi 1.899 angle(v) 1.0
+/controller_0 v 0.505 w 0.127 e_rho -0.109 e_phi -1.047 angle(v) 169.0
+/planner_3 won consensus of iteration # 15.0 with cost 130.683975283
+
+/planner_4 won consensus of iteration # 16.0 with cost 124.025713588
+
+/controller_0 v 0.511 w 0.111 e_rho -0.135 e_phi -1.252 angle(v) -151.0
+/controller_1 v 0.683 w 0.052 e_rho -0.257 e_phi -0.411 angle(v) -75.0
+/controller_4 v 0.609 w 0.092 e_rho -0.136 e_phi -0.27 angle(v) 133.0
+/controller_2 v 0.811 w 0.01 e_rho 0.014 e_phi 2.055 angle(v) -31.0
+/controller_3 v 0.484 w 0.022 e_rho 0.162 e_phi -1.071 angle(v) 27.0
+/planner_0 won consensus of iteration # 17.0 with cost 144.472873459
+
+/planner_3 won consensus of iteration # 18.0 with cost 139.597140552
+
+/controller_3 v 0.627 w -0.099 e_rho 0.489 e_phi -0.916 angle(v) 34.0
+/controller_0 v 0.708 w 0.074 e_rho -0.503 e_phi -2.073 angle(v) -78.0
+/controller_2 v 1.009 w 0.023 e_rho 0.014 e_phi 4.108 angle(v) 1.0
+/controller_4 v 0.084 w 0.077 e_rho 0.012 e_phi -4.686 angle(v) 166.0
+/controller_1 v 0.964 w -0.007 e_rho -0.277 e_phi 1.932 angle(v) -47.0
+/planner_2 won consensus of iteration # 19.0 with cost 137.597144605
+
+/planner_3 won consensus of iteration # 20.0 with cost 135.933019048
+
+/controller_2 v 0.579 w 0.1 e_rho 0.076 e_phi -0.036 angle(v) 43.0
+/controller_1 v 0.637 w 0.036 e_rho -0.216 e_phi -0.146 angle(v) -1.0
+/controller_3 v 0.639 w 0.213 e_rho -0.066 e_phi 0.304 angle(v) 132.0
+/controller_0 v 0.802 w -0.04 e_rho -0.051 e_phi 0.993 angle(v) -89.0
+/controller_4 v 0.436 w -0.088 e_rho -0.085 e_phi -1.412 angle(v) -151.0
+/planner_3 won consensus of iteration # 21.0 with cost 149.933019048
+
+/planner_2 won consensus of iteration # 22.0 with cost 142.930479051
+
+/controller_1 v 0.389 w -0.021 e_rho 0.16 e_phi -1.55 angle(v) -4.0
+/controller_3 v 0.544 w 0.089 e_rho -0.317 e_phi -1.58 angle(v) -159.0
+/controller_0 v 0.397 w -0.106 e_rho 0.101 e_phi -1.869 angle(v) -64.0
+/controller_2 v 0.443 w 0.139 e_rho -0.05 e_phi -2.161 angle(v) 103.0
+/controller_4 v 1.033 w 0.019 e_rho -0.024 e_phi 4.292 angle(v) -132.0
+/planner_1 won consensus of iteration # 23.0 with cost 135.263816438
+
+/planner_4 won consensus of iteration # 24.0 with cost 109.231782021
+
+/controller_0 v 0.979 w -0.016 e_rho 0.073 e_phi 4.383 angle(v) -32.0
+/controller_3 v 0.411 w -0.005 e_rho -0.095 e_phi -2.092 angle(v) -139.0
+/controller_2 v 0.167 w 0.001 e_rho -0.031 e_phi -4.382 angle(v) 150.0
+/controller_1 v 0.642 w 0.153 e_rho 0.352 e_phi 0.657 angle(v) 21.0
+/controller_4 v 0.865 w -0.035 e_rho -0.446 e_phi -0.123 angle(v) -60.0
+/planner_3 won consensus of iteration # 25.0 with cost 113.23178205
+
+/planner_1 won consensus of iteration # 26.0 with cost 139.597153816
+
+/controller_1 v 0.555 w 0.088 e_rho -0.053 e_phi -0.748 angle(v) 98.0
+/controller_0 v 0.714 w 0.136 e_rho -0.043 e_phi 1.335 angle(v) 19.0
+/controller_3 v 0.491 w 0.012 e_rho 0.025 e_phi -1.119 angle(v) -124.0
+/controller_2 v 0.473 w 0.053 e_rho -0.025 e_phi -1.129 angle(v) 171.0
+/controller_4 v 0.687 w 0.066 e_rho -0.074 e_phi 0.54 angle(v) -47.0
+/planner_3 won consensus of iteration # 27.0 with cost 119.930484217
+
+/planner_4 won consensus of iteration # 28.0 with cost 109.965115431
+
+/controller_4 v 0.583 w 0.029 e_rho -0.04 e_phi -0.287 angle(v) -12.0
+/controller_0 v 0.71 w 0.174 e_rho -0.009 e_phi 1.274 angle(v) 55.0
+/controller_2 v 0.524 w 0.003 e_rho -0.02 e_phi -0.81 angle(v) -154.0
+/controller_3 v 0.536 w 0.099 e_rho -0.091 e_phi -0.862 angle(v) -75.0
+/controller_1 v 0.15 w -0.147 e_rho 0.153 e_phi -4.435 angle(v) 91.0
+/planner_1 won consensus of iteration # 29.0 with cost 114.930484208
+
+/planner_1 won consensus of iteration # 30.0 with cost 112.930484208
+
+/controller_3 v 0.694 w 0.026 e_rho -0.008 e_phi 0.916 angle(v) -51.0
+/controller_2 v 0.596 w 0.283 e_rho -0.317 e_phi -0.971 angle(v) -89.0
+/controller_0 v 0.478 w 0.014 e_rho 0.04 e_phi -0.828 angle(v) 92.0
+/controller_1 v 0.444 w 0.076 e_rho -0.053 e_phi -1.756 angle(v) 180.0
+/controller_4 v 0.702 w -0.036 e_rho 0.144 e_phi 1.063 angle(v) 7.0
+/planner_1 won consensus of iteration # 31.0 with cost 122.930484208
+
+/planner_0 won consensus of iteration # 32.0 with cost 137.753364332
+
+/controller_0 v 0.606 w 0.125 e_rho 0.084 e_phi 0.471 angle(v) 125.0
+/controller_3 v 0.594 w 0.051 e_rho 0.052 e_phi -0.372 angle(v) -16.0
+/controller_2 v 0.487 w 0.056 e_rho -0.125 e_phi -1.197 angle(v) -66.0
+/controller_1 v 0.51 w 0.01 e_rho -0.11 e_phi -1.458 angle(v) -137.0
+/controller_4 v 0.63 w 0.111 e_rho -0.063 e_phi 0.444 angle(v) 66.0
+/planner_0 won consensus of iteration # 33.0 with cost 135.753364332
+
+/planner_4 won consensus of iteration # 34.0 with cost 161.263819776
+
+/controller_1 v 0.801 w -0.041 e_rho -0.496 e_phi -0.263 angle(v) -74.0
+/controller_0 v 0.453 w 0.086 e_rho 0.135 e_phi -2.345 angle(v) 163.0
+/controller_3 v 0.816 w 0.115 e_rho 0.232 e_phi 1.85 angle(v) 10.0
+/controller_2 v 0.72 w -0.013 e_rho -0.074 e_phi 1.533 angle(v) -46.0
+/controller_4 v 0.307 w -0.024 e_rho 0.15 e_phi -2.365 angle(v) 75.0
+/planner_3 won consensus of iteration # 35.0 with cost 126.183449006
+
+/planner_4 won consensus of iteration # 36.0 with cost 120.442883753
+
+/controller_1 v 0.681 w -0.033 e_rho -0.03 e_phi 1.903 angle(v) -77.0
+/controller_0 v 0.871 w 0.057 e_rho -0.342 e_phi 0.391 angle(v) -125.0
+/controller_3 v 0.401 w -0.104 e_rho 0.092 e_phi -1.029 angle(v) 55.0
+/controller_2 v 0.754 w 0.087 e_rho 0.122 e_phi 0.547 angle(v) -19.0
+/controller_4 v 0.636 w 0.079 e_rho 0.163 e_phi 0.755 angle(v) 124.0
+/planner_1 won consensus of iteration # 37.0 with cost 103.229262493
+
+/planner_3 won consensus of iteration # 38.0 with cost 122.26382088
+
+/controller_1 v 0.584 w -0.004 e_rho 0.111 e_phi -0.046 angle(v) -51.0
+/controller_0 v 0.639 w 0.142 e_rho -0.203 e_phi 0.28 angle(v) -90.0
+/controller_4 v 0.47 w 0.078 e_rho 0.023 e_phi -1.838 angle(v) 178.0
+/controller_2 v 0.737 w 0.133 e_rho -0.111 e_phi 0.659 angle(v) 41.0
+/controller_3 v 0.532 w 0.063 e_rho 0.113 e_phi 0.334 angle(v) 93.0
+/planner_3 won consensus of iteration # 39.0 with cost 120.26382088
+
+/planner_2 won consensus of iteration # 40.0 with cost 106.962596017
+
+/controller_0 v 0.61 w -0.032 e_rho -0.309 e_phi -0.495 angle(v) -41.0
+/controller_3 v 0.609 w 0.121 e_rho 0.51 e_phi -1.985 angle(v) 90.0
+/controller_2 v 0.78 w 0.056 e_rho -0.022 e_phi 3.248 angle(v) 68.0
+/controller_4 v 0.464 w 0.215 e_rho -0.356 e_phi -2.871 angle(v) -89.0
+/controller_1 v 0.886 w 0.047 e_rho -0.088 e_phi 0.754 angle(v) -0.0
+/planner_0 won consensus of iteration # 41.0 with cost 113.762596046
+
+/planner_1 won consensus of iteration # 42.0 with cost 132.952256977
+
+/controller_2 v 0.463 w 0.028 e_rho 0.011 e_phi -0.265 angle(v) 107.0
+/controller_0 v 0.749 w -0.044 e_rho 0.211 e_phi 1.972 angle(v) -58.0
+/controller_3 v 0.655 w 0.1 e_rho 0.099 e_phi -0.634 angle(v) 175.0
+/controller_1 v 0.622 w 0.052 e_rho -0.276 e_phi -1.204 angle(v) 66.0
+/controller_4 v 0.455 w 0.008 e_rho -0.117 e_phi -0.968 angle(v) -92.0
+/planner_2 won consensus of iteration # 43.0 with cost 96.5971551356
+
+/planner_1 won consensus of iteration # 44.0 with cost 94.2959293562
+
+/controller_1 v 0.227 w -0.106 e_rho 0.011 e_phi -3.327 angle(v) 77.0
+/controller_0 v 0.457 w 0.124 e_rho 0.148 e_phi -1.372 angle(v) -18.0
+/controller_3 v 0.669 w 0.133 e_rho -0.321 e_phi -0.933 angle(v) -116.0
+/controller_2 v 0.651 w 0.164 e_rho -0.145 e_phi 0.065 angle(v) 159.0
+/controller_4 v 0.839 w 0.157 e_rho 0.281 e_phi 3.723 angle(v) -99.0
+/planner_1 won consensus of iteration # 45.0 with cost 116.506960449
+
+/planner_2 won consensus of iteration # 46.0 with cost 90.1323283856
+
+/controller_1 v 0.393 w 0.22 e_rho 0.058 e_phi -1.641 angle(v) 106.0
+/controller_0 v 0.572 w 0.016 e_rho 0.199 e_phi 0.211 angle(v) 13.0
+/controller_2 v 0.564 w 0.005 e_rho -0.292 e_phi -1.429 angle(v) -145.0
+/controller_3 v 0.719 w -0.031 e_rho -0.039 e_phi 0.505 angle(v) -106.0
+/controller_4 v 0.751 w 0.113 e_rho -0.009 e_phi 1.707 angle(v) -39.0
+/planner_0 won consensus of iteration # 47.0 with cost 108.359056364
+
+/planner_1 won consensus of iteration # 48.0 with cost 115.09715159
+
+/controller_3 v 0.672 w 0.02 e_rho -0.044 e_phi 0.289 angle(v) -64.0
+/controller_1 v 0.46 w 0.049 e_rho -0.093 e_phi -1.532 angle(v) 162.0
+/controller_2 v 0.478 w 0.055 e_rho 0.018 e_phi -1.093 angle(v) -141.0
+/controller_4 v 0.734 w 0.097 e_rho -0.105 e_phi 1.385 angle(v) 7.0
+/controller_0 v 0.697 w 0.099 e_rho 0.051 e_phi 0.832 angle(v) 68.0
+/planner_1 won consensus of iteration # 49.0 with cost 114.76536942
+
+/planner_4 won consensus of iteration # 50.0 with cost 133.168144693
+
+/controller_1 v 0.267 w 0.071 e_rho 0.175 e_phi -3.658 angle(v) 152.0
+/controller_0 v 0.734 w 0.039 e_rho 0.241 e_phi 1.924 angle(v) 89.0
+/controller_3 v 0.751 w -0.028 e_rho -0.285 e_phi 0.081 angle(v) -11.0
+/controller_2 v 0.522 w 0.033 e_rho -0.29 e_phi -2.185 angle(v) -63.0
+/controller_4 v 0.847 w 0.055 e_rho -0.042 e_phi 2.297 angle(v) 35.0
+/planner_1 won consensus of iteration # 51.0 with cost 99.2209314494
+
+/planner_4 won consensus of iteration # 52.0 with cost 107.525723942
+
+/controller_0 v 0.658 w 0.118 e_rho 0.0 e_phi 0.563 angle(v) 148.0
+/controller_3 v 0.641 w 0.032 e_rho 0.172 e_phi 0.457 angle(v) -13.0
+/controller_2 v 0.565 w 0.045 e_rho -0.109 e_phi -0.557 angle(v) -57.0
+/controller_1 v 0.463 w 0.119 e_rho -0.206 e_phi -2.115 angle(v) -111.0
+/controller_4 v 0.505 w 0.049 e_rho 0.005 e_phi -0.707 angle(v) 76.0
+/planner_1 won consensus of iteration # 53.0 with cost 102.763819171
+
+/planner_1 won consensus of iteration # 54.0 with cost 100.763819171
+
+/controller_0 v 0.982 w 0.08 e_rho -0.231 e_phi 2.54 angle(v) -165.0
+/controller_3 v 0.382 w 0.088 e_rho -0.071 e_phi -2.186 angle(v) 59.0
+/controller_4 v 0.549 w 0.156 e_rho -0.183 e_phi -1.072 angle(v) 135.0
+/controller_2 v 0.452 w 0.009 e_rho 0.148 e_phi -1.352 angle(v) -47.0
+/controller_1 v 0.637 w -0.07 e_rho 0.182 e_phi 0.626 angle(v) -122.0
+/planner_1 won consensus of iteration # 55.0 with cost 98.7638191709
+
+/planner_2 won consensus of iteration # 56.0 with cost 121.859966957
+
+/controller_3 v 0.387 w 0.051 e_rho -0.134 e_phi -3.023 angle(v) 108.0
+/controller_4 v 0.891 w 0.069 e_rho -0.528 e_phi -0.039 angle(v) -174.0
+/controller_2 v 0.165 w 0.063 e_rho 0.057 e_phi -3.929 angle(v) -5.0
+/controller_0 v 1.077 w 0.03 e_rho -0.162 e_phi 4.749 angle(v) -142.0
+/controller_1 v 0.646 w 0.109 e_rho 0.216 e_phi 0.174 angle(v) -87.0
+/planner_4 won consensus of iteration # 57.0 with cost 91.4959293562
+
+/planner_3 won consensus of iteration # 58.0 with cost 92.7638175504
+
+/controller_3 v 0.353 w 0.062 e_rho -0.146 e_phi -3.028 angle(v) 148.0
+/controller_2 v 0.502 w 0.025 e_rho 0.306 e_phi -1.378 angle(v) 4.0
+/controller_1 v 0.794 w 0.071 e_rho -0.097 e_phi 2.012 angle(v) -27.0
+/controller_0 v 0.886 w 0.086 e_rho -0.093 e_phi 1.437 angle(v) -101.0
+/controller_4 v 0.561 w 0.055 e_rho -0.269 e_phi -0.939 angle(v) -141.0
+/planner_2 won consensus of iteration # 59.0 with cost 98.7638166365
+
+/planner_1 found solution with cost 133.92
+	/planner_3 the prior map is bad!
+	/planner_2 the prior map is bad!
+	/planner_4 the prior map is bad!
+	/planner_0 the prior map is bad!
+/planner_1 won consensus of iteration # 60.0 with cost 145.922971552
+
+/planner_3 found solution with cost 89.16
+/planner_2 found solution with cost 109.2
+/planner_0 found solution with cost 90.78
+/planner_4 found solution with cost 106.61
+/controller_1 v 0.496 w 0.038 e_rho 0.096 e_phi 0.073 angle(v) -5.0
+/controller_2 v 0.495 w 0.087 e_rho 0.272 e_phi -1.955 angle(v) 52.0
+/controller_3 v 0.568 w 0.08 e_rho -0.288 e_phi -1.212 angle(v) -172.0
+/controller_0 v 1.089 w 0.136 e_rho -0.212 e_phi 2.739 angle(v) -58.0
+/controller_4 v 0.57 w 0.035 e_rho -0.182 e_phi -0.83 angle(v) -119.0
+/planner_3 won consensus of iteration # 61.0 with cost 89.1625960939
+
+/planner_2 found solution with cost 92.67
+/planner_0 found solution with cost 90.09
+/planner_4 found solution with cost 181.37
+/planner_3 won consensus of iteration # 62.0 with cost 87.1625960939
+
+/controller_3 v 0.245 w -0.098 e_rho 0.135 e_phi -3.198 angle(v) 162.0
+/controller_4 v 0.433 w 0.155 e_rho -0.12 e_phi -2.208 angle(v) -82.0
+/controller_1 v 0.641 w 0.027 e_rho 0.058 e_phi 0.709 angle(v) 33.0
+/controller_0 v 0.731 w 0.137 e_rho -0.303 e_phi 0.149 angle(v) -5.0
+/controller_2 v 0.75 w 0.076 e_rho 0.021 e_phi 1.035 angle(v) 112.0
+/planner_4 found solution with cost 179.28
+/planner_2 found solution with cost 88.09
+/planner_0 found solution with cost 86.36
+/planner_3 won consensus of iteration # 63.0 with cost 85.1625960939
+
+/planner_2 found solution with cost 122.95
+/planner_0 found solution with cost 148.13
+/planner_4 found solution with cost 110.97
+	/planner_1 the prior map is bad!
+/planner_3 won consensus of iteration # 64.0 with cost 95.1625960939
+
+/planner_1 found solution with cost 86.3
+/controller_1 v 0.804 w 0.081 e_rho 0.16 e_phi 2.97 angle(v) 65.0
+/controller_4 v 0.815 w -0.067 e_rho -0.519 e_phi -0.871 angle(v) -21.0
+/controller_3 v -0.002 w 0.463 e_rho -0.161 e_phi -1.936 angle(v) -104.0
+/controller_0 v 1.045 w -0.072 e_rho -0.191 e_phi 3.056 angle(v) 11.0
+/controller_2 v 0.366 w 0.042 e_rho 0.351 e_phi -4.694 angle(v) 91.0
+/planner_2 found solution with cost 95.61
+/planner_0 found solution with cost 105.85
+/planner_1 won consensus of iteration # 65.0 with cost 86.295930667
+
+/planner_3 found solution with cost 122.68
+/planner_2 found solution with cost 115.1
+/planner_4 found solution with cost 86.43
+/planner_0 found solution with cost 98.86
+/planner_1 won consensus of iteration # 66.0 with cost 84.295930667
+
+/planner_0 found solution with cost 81.36
+/planner_3 found solution with cost 113.54
+/planner_2 found solution with cost 82.56
+/controller_1 v 0.524 w -0.038 e_rho 0.107 e_phi -0.288 angle(v) 104.0
+/controller_2 v 0.403 w 0.01 e_rho 0.135 e_phi -2.158 angle(v) 176.0
+/controller_0 v 0.894 w 0.107 e_rho -0.088 e_phi 2.399 angle(v) 46.0
+/controller_3 v 0.519 w 0.181 e_rho -0.309 e_phi -1.74 angle(v) -58.0
+/controller_4 v 0.683 w 0.14 e_rho -0.171 e_phi -0.045 angle(v) -14.0
+/planner_4 found solution with cost 164.33
+/planner_0 won consensus of iteration # 67.0 with cost 81.3625974956
+
+/planner_3 found solution with cost 79.36
+/planner_1 found solution with cost 116.85
+/planner_2 found solution with cost 80.3
+/planner_4 found solution with cost 84.26
+/planner_0 won consensus of iteration # 68.0 with cost 91.3625974956
+
+/planner_4 found solution with cost 92.1
+/controller_1 v 0.407 w 0.257 e_rho 0.362 e_phi -2.448 angle(v) 110.0
+/controller_3 v 1.166 w -0.117 e_rho -0.635 e_phi 1.863 angle(v) -34.0
+/controller_4 v 0.993 w 0.061 e_rho -0.283 e_phi 1.77 angle(v) 14.0
+/controller_2 v 0.277 w 0.267 e_rho -0.385 e_phi -6.079 angle(v) -31.0
+/controller_0 v 0.85 w 0.12 e_rho 0.16 e_phi 3.902 angle(v) 62.0
+/planner_3 found solution with cost 85.81
+/planner_1 found solution with cost 82.5
+/planner_2 found solution with cost 85.81
+/planner_1 won consensus of iteration # 69.0 with cost 82.4959319068
+
+/planner_4 found solution with cost 86.68
+/planner_0 found solution with cost 113.91
+/planner_2 found solution with cost 83.81
+/planner_3 found solution with cost 122.67
+/planner_1 won consensus of iteration # 70.0 with cost 80.4959319068
+
+/planner_2 found solution with cost 85.08
+/planner_3 found solution with cost 86.76
+/planner_0 found solution with cost 81.81
+/controller_0 v 0.644 w 0.047 e_rho 0.068 e_phi 1.414 angle(v) 101.0
+/controller_2 v 0.353 w 0.17 e_rho -0.242 e_phi -2.913 angle(v) -57.0
+/controller_1 v 0.421 w 0.006 e_rho 0.144 e_phi -2.197 angle(v) 170.0
+/planner_4 found solution with cost 78.5
+/controller_3 v 0.873 w 0.064 e_rho -0.172 e_phi 1.695 angle(v) -25.0
+/controller_4 v 0.815 w 0.059 e_rho -0.105 e_phi 1.353 angle(v) 43.0
+/planner_1 won consensus of iteration # 71.0 with cost 90.4959319068
+
+/planner_4 found solution with cost 98.76
+/planner_0 found solution with cost 87.61
+/planner_3 found solution with cost 121.34
+/planner_2 found solution with cost 101.41
+/planner_0 won consensus of iteration # 72.0 with cost 87.6145289836
+
+/planner_1 found solution with cost 81.47
+/controller_1 v 0.516 w -0.009 e_rho -0.179 e_phi -1.603 angle(v) -117.0
+/controller_0 v 0.64 w 0.187 e_rho 0.134 e_phi 0.77 angle(v) 130.0
+/controller_2 v 0.281 w -0.008 e_rho -0.033 e_phi -2.848 angle(v) -63.0
+/controller_4 v 0.409 w 0.105 e_rho -0.174 e_phi -1.969 angle(v) 97.0
+/controller_3 v 1.232 w 0.066 e_rho 0.014 e_phi 4.517 angle(v) -9.0
+/planner_4 found solution with cost 131.05
+/planner_2 found solution with cost 88.29
+/planner_3 found solution with cost 95.94
+/planner_0 won consensus of iteration # 73.0 with cost 85.6145289836
+
+/planner_2 found solution with cost 79.47
+/planner_4 found solution with cost 90.76
+/planner_1 found solution with cost 79.47
+/planner_3 found solution with cost 79.47
+/planner_0 won consensus of iteration # 74.0 with cost 83.6145289836
+
+/planner_3 found solution with cost 84.62
+/planner_1 found solution with cost 77.47
+/controller_1 v 0.647 w 0.034 e_rho -0.385 e_phi -1.44 angle(v) -70.0
+/controller_0 v 0.423 w 0.064 e_rho -0.036 e_phi -2.005 angle(v) -169.0
+/controller_3 v 1.241 w -0.072 e_rho 0.129 e_phi 6.231 angle(v) 13.0
+/controller_2 v 0.707 w 0.112 e_rho -0.137 e_phi 0.517 angle(v) -33.0
+/controller_4 v 0.443 w -0.111 e_rho 0.407 e_phi -3.62 angle(v) 40.0
+/planner_2 found solution with cost 77.47
+/planner_4 found solution with cost 90.43
+/planner_1 won consensus of iteration # 75.0 with cost 89.4654202724
+
+/planner_2 found solution with cost 78.87
+/planner_4 found solution with cost 156.67
+/planner_0 found solution with cost 78.87
+/planner_3 found solution with cost 78.87
+/planner_1 won consensus of iteration # 76.0 with cost 89.4654202724
+
+/controller_1 v 0.388 w -0.045 e_rho -0.06 e_phi -1.818 angle(v) -65.0
+/controller_0 v 0.518 w 0.014 e_rho -0.081 e_phi -1.23 angle(v) -135.0
+/controller_2 v 0.682 w 0.067 e_rho -0.002 e_phi 0.061 angle(v) -7.0
+/controller_4 v 0.554 w 0.13 e_rho 0.136 e_phi -0.113 angle(v) 123.0
+/controller_3 v 0.732 w 0.049 e_rho -0.12 e_phi 1.367 angle(v) 73.0
+/planner_4 found solution with cost 143.62
+/planner_3 found solution with cost 76.83
+/planner_0 found solution with cost 150.21
+/planner_2 found solution with cost 78.87
+/planner_3 won consensus of iteration # 77.0 with cost 88.8292666706
+
+/planner_2 found solution with cost 78.87
+/planner_0 found solution with cost 78.87
+/planner_4 found solution with cost 165.95
+/planner_1 found solution with cost 78.87
+/planner_3 won consensus of iteration # 78.0 with cost 88.8292666706
+
+/planner_0 found solution with cost 76.83
+/planner_4 found solution with cost 129.71
+/controller_1 v 0.405 w -0.042 e_rho 0.134 e_phi -1.909 angle(v) -63.0
+/controller_0 v 0.394 w 0.087 e_rho -0.122 e_phi -2.062 angle(v) -95.0
+/controller_3 v 0.619 w 0.12 e_rho -0.095 e_phi 0.72 angle(v) 103.0
+/controller_2 v 0.649 w 0.002 e_rho -0.071 e_phi -0.195 angle(v) 33.0
+/controller_4 v 0.79 w 0.181 e_rho 0.04 e_phi 1.368 angle(v) 164.0
+/planner_1 found solution with cost 159.72
+/planner_2 found solution with cost 97.52
+/planner_3 won consensus of iteration # 79.0 with cost 88.8292666706
+
+/planner_1 found solution with cost 79.62
+/planner_2 found solution with cost 100.48
+/planner_4 found solution with cost 97.74
+/planner_0 found solution with cost 193.81
+/planner_3 won consensus of iteration # 80.0 with cost 88.8292666706
+
+/planner_1 found solution with cost 78.87
+/planner_0 found solution with cost 135.43
+/planner_2 found solution with cost 121.26
+/controller_2 v 0.328 w 0.032 e_rho -0.114 e_phi -2.86 angle(v) 83.0
+/controller_0 v 0.363 w 0.04 e_rho -0.01 e_phi -1.909 angle(v) -77.0
+/controller_3 v 1.085 w 0.103 e_rho 0.035 e_phi 5.898 angle(v) 118.0
+/controller_4 v 0.527 w 0.098 e_rho -0.122 e_phi -1.435 angle(v) -141.0
+/planner_4 found solution with cost 78.87
+/controller_1 v 0.566 w 0.061 e_rho 0.002 e_phi -0.957 angle(v) -8.0
+/planner_3 won consensus of iteration # 81.0 with cost 76.8292666706
+
+/planner_1 found solution with cost 76.87
+/planner_2 found solution with cost 92.56
+/planner_4 found solution with cost 83.05
+/planner_0 found solution with cost 84.87
+/planner_3 won consensus of iteration # 82.0 with cost 74.8292666706
+
+/planner_2 found solution with cost 74.87
+/planner_0 found solution with cost 74.87
+/controller_1 v 0.735 w 0.033 e_rho -0.2 e_phi 0.063 angle(v) 41.0
+/controller_0 v 0.608 w 0.002 e_rho -0.018 e_phi 0.045 angle(v) -43.0
+/controller_3 v 0.468 w 0.047 e_rho 0.14 e_phi -1.485 angle(v) 156.0
+/controller_2 v 0.61 w -0.037 e_rho 0.181 e_phi 0.854 angle(v) 78.0
+/controller_4 v 0.508 w -0.02 e_rho -0.146 e_phi -1.178 angle(v) -96.0
+/planner_4 found solution with cost 93.27
+/planner_1 found solution with cost 90.87
+/planner_3 won consensus of iteration # 83.0 with cost 72.8292666706
+
+/planner_2 found solution with cost 72.87
+/planner_0 found solution with cost 72.87
+/planner_4 found solution with cost 90.41
+/planner_1 found solution with cost 70.83
+/planner_1 won consensus of iteration # 84.0 with cost 82.8292679327
+
+/planner_4 found solution with cost 74.09
+/controller_0 v 1.054 w -0.115 e_rho -0.454 e_phi 2.468 angle(v) 11.0
+/controller_3 v 0.192 w 0.118 e_rho -0.152 e_phi -4.391 angle(v) -97.0
+/controller_2 v 0.464 w 0.15 e_rho 0.306 e_phi -1.193 angle(v) 105.0
+/controller_4 v 0.78 w 0.049 e_rho -0.355 e_phi -0.602 angle(v) -48.0
+/controller_1 v 0.86 w 0.038 e_rho 0.179 e_phi 2.804 angle(v) 45.0
+/planner_2 found solution with cost 92.97
+/planner_0 found solution with cost 74.09
+/planner_1 won consensus of iteration # 85.0 with cost 82.8292679327
+
+/planner_4 found solution with cost 74.09
+/planner_2 found solution with cost 104.76
+/planner_0 found solution with cost 100.49
+/planner_3 found solution with cost 76.98
+/planner_1 won consensus of iteration # 86.0 with cost 82.8292679327
+
+/planner_2 found solution with cost 74.09
+/planner_0 found solution with cost 74.09
+/controller_1 v 0.483 w 0.105 e_rho -0.074 e_phi -1.731 angle(v) 113.0
+/controller_4 v 0.268 w 0.09 e_rho -0.157 e_phi -3.798 angle(v) -8.0
+/controller_3 v 1.189 w -0.087 e_rho 0.073 e_phi 6.105 angle(v) -132.0
+/controller_2 v 0.291 w 0.047 e_rho -0.046 e_phi -2.825 angle(v) -178.0
+/controller_0 v 0.637 w 0.127 e_rho -0.011 e_phi 0.964 angle(v) 28.0
+/planner_3 found solution with cost 74.34
+/planner_4 found solution with cost 105.81
+/planner_2 won consensus of iteration # 87.0 with cost 74.0894233627
+
+/planner_0 found solution with cost 72.09
+/planner_3 found solution with cost 72.09
+/planner_4 found solution with cost 85.03
+/planner_1 found solution with cost 114.62
+/planner_2 won consensus of iteration # 88.0 with cost 72.0894233627
+
+/planner_3 found solution with cost 101.81
+/planner_4 found solution with cost 77.38
+/controller_1 v 0.527 w -0.07 e_rho 0.059 e_phi -0.487 angle(v) 130.0
+/controller_0 v 0.728 w 0.047 e_rho 0.074 e_phi 1.195 angle(v) 53.0
+/controller_3 v 0.955 w 0.273 e_rho -0.3 e_phi 1.751 angle(v) -64.0
+/controller_2 v 0.222 w -0.051 e_rho 0.127 e_phi -3.835 angle(v) 179.0
+/controller_4 v 0.678 w 0.105 e_rho -0.181 e_phi 0.361 angle(v) 3.0
+/planner_1 found solution with cost 216.62
+/planner_0 found solution with cost 106.84
+/planner_2 won consensus of iteration # 89.0 with cost 82.0894233627
+
+/planner_3 found solution with cost 83.43
+/planner_4 found solution with cost 71.16
+/planner_0 found solution with cost 140.04
+/planner_1 found solution with cost 145.73
+/planner_2 won consensus of iteration # 90.0 with cost 82.0894233627
+
+/planner_4 found solution with cost 75.37
+/planner_0 found solution with cost 187.5
+/controller_4 v 0.65 w 0.023 e_rho -0.067 e_phi 0.229 angle(v) 24.0
+/controller_1 v 0.423 w 0.126 e_rho -0.008 e_phi -1.63 angle(v) 171.0
+/controller_0 v 0.611 w 0.126 e_rho -0.025 e_phi 0.197 angle(v) 96.0
+/controller_2 v 0.338 w 0.078 e_rho -0.047 e_phi -2.636 angle(v) -111.0
+/controller_3 v 1.113 w 0.338 e_rho -0.391 e_phi 3.185 angle(v) -37.0
+/planner_1 found solution with cost 127.71
+/planner_3 found solution with cost 94.0
+/planner_2 won consensus of iteration # 91.0 with cost 82.0894233627
+
+/planner_4 found solution with cost 71.38
+/planner_3 found solution with cost 153.76
+/planner_0 found solution with cost 155.42
+/planner_1 found solution with cost 161.79
+/planner_2 won consensus of iteration # 92.0 with cost 82.0894233627
+
+/controller_2 v 0.206 w 0.039 e_rho -0.031 e_phi -3.942 angle(v) -85.0
+/controller_1 v 0.396 w 0.042 e_rho -0.044 e_phi -2.139 angle(v) -152.0
+/controller_0 v 0.429 w 0.036 e_rho -0.042 e_phi -1.791 angle(v) 133.0
+/controller_4 v 0.286 w 0.027 e_rho -0.049 e_phi -3.232 angle(v) 58.0
+/controller_3 v 1.793 w -0.297 e_rho -0.207 e_phi 10.361 angle(v) -37.0
+/planner_1 found solution with cost 155.64
+/planner_3 found solution with cost 115.62
+/planner_4 found solution with cost 137.24
+/planner_0 found solution with cost 167.23
+/planner_2 won consensus of iteration # 93.0 with cost 82.0894233627
+
+/planner_1 found solution with cost 163.06
+/planner_0 found solution with cost 121.56
+/planner_4 found solution with cost 246.28
+/planner_3 found solution with cost 71.19
+/planner_2 won consensus of iteration # 94.0 with cost 82.0894233627
+
+/controller_1 v 0.373 w 0.059 e_rho -0.055 e_phi -2.363 angle(v) -122.0
+/controller_0 v 0.387 w 0.039 e_rho -0.018 e_phi -2.161 angle(v) 160.0
+/controller_3 v 1.367 w 0.089 e_rho -0.127 e_phi 6.761 angle(v) -3.0
+/controller_2 v 0.356 w 0.015 e_rho -0.015 e_phi -2.454 angle(v) -63.0
+/controller_4 v 0.405 w 0.073 e_rho -0.06 e_phi -2.021 angle(v) 84.0
+/planner_3 found solution with cost 71.79
+/planner_4 found solution with cost 153.1
+/planner_1 found solution with cost 112.67
+/planner_0 found solution with cost 122.73
+/planner_2 won consensus of iteration # 95.0 with cost 82.0894233627
+
+/planner_3 found solution with cost 71.27
+/planner_0 found solution with cost 150.42
+/planner_1 found solution with cost 203.79
+/planner_4 found solution with cost 149.77
+/planner_2 won consensus of iteration # 96.0 with cost 82.0894233627
+
+/controller_4 v 0.657 w 0.015 e_rho -0.068 e_phi 0.353 angle(v) 112.0
+/controller_0 v 0.393 w 0.038 e_rho -0.031 e_phi -2.145 angle(v) -169.0
+/controller_2 v 0.652 w 0.031 e_rho 0.001 e_phi 0.526 angle(v) -37.0
+/controller_3 v 0.883 w 0.285 e_rho -0.075 e_phi 2.89 angle(v) 33.0
+/controller_1 v 0.383 w 0.012 e_rho -0.041 e_phi -2.251 angle(v) -94.0
+/planner_1 found solution with cost 133.17
+/planner_4 found solution with cost 141.15
+/planner_3 found solution with cost 80.04
+/planner_0 found solution with cost 116.91
+/planner_2 won consensus of iteration # 97.0 with cost 82.0894233627
+
+/planner_1 found solution with cost 151.89
+/planner_3 found solution with cost 87.43
+/planner_0 found solution with cost 155.42
+/planner_4 found solution with cost 141.9
+/planner_2 won consensus of iteration # 98.0 with cost 82.0894233627
+
+/controller_1 v 0.449 w 0.022 e_rho -0.042 e_phi -1.598 angle(v) -66.0
+/controller_0 v 0.427 w 0.025 e_rho -0.021 e_phi -1.778 angle(v) -140.0
+/controller_3 v 0.736 w 0.073 e_rho -0.063 e_phi 1.168 angle(v) 69.0
+/controller_2 v 0.609 w 0.043 e_rho -0.028 e_phi -0.015 angle(v) -2.0
+/controller_4 v 0.652 w 0.042 e_rho -0.041 e_phi 0.389 angle(v) 144.0
+/planner_1 found solution with cost 167.43
+/planner_0 found solution with cost 123.62
+/planner_3 found solution with cost 147.43
+/planner_2 won consensus of iteration # 99.0 with cost 82.0894233627
+
+/planner_1 found solution with cost 124.83
+/planner_4 found solution with cost 161.95
+/planner_3 found solution with cost 203.93
+/planner_0 found solution with cost 137.96
+/planner_2 won consensus of iteration # 100.0 with cost 82.0894233627
+
+/controller_0 v 0.403 w 0.025 e_rho -0.05 e_phi -2.07 angle(v) -102.0
+/controller_1 v 0.293 w 0.038 e_rho -0.027 e_phi -3.099 angle(v) -32.0
+/controller_3 v 1.558 w 0.146 e_rho -0.044 e_phi 9.384 angle(v) 81.0
+/controller_2 v 0.453 w 0.08 e_rho -0.043 e_phi -1.532 angle(v) 29.0
+/controller_4 v 0.248 w 0.017 e_rho -0.022 e_phi -3.563 angle(v) 177.0
+/planner_3 found solution with cost 122.5
+/planner_4 found solution with cost 267.53
+/planner_0 found solution with cost 158.43
+/planner_1 found solution with cost 148.87
+/planner_2 won consensus of iteration # 101.0 with cost 82.0894233627
+
+/planner_3 found solution with cost 128.82
+/planner_1 found solution with cost 145.04
+/planner_4 found solution with cost 141.47
+/planner_0 found solution with cost 190.12
+/planner_2 won consensus of iteration # 102.0 with cost 82.0894233627
+
+/controller_2 v 0.374 w 0.052 e_rho -0.049 e_phi -2.339 angle(v) 61.0
+/controller_1 v 0.395 w 0.039 e_rho -0.033 e_phi -2.123 angle(v) -6.0
+/controller_0 v 0.443 w 0.033 e_rho -0.01 e_phi -1.559 angle(v) -81.0
+/controller_3 v 1.494 w 0.137 e_rho -0.018 e_phi 8.936 angle(v) 109.0
+/controller_4 v 0.299 w 0.04 e_rho -0.035 e_phi -3.073 angle(v) -155.0
+/planner_3 found solution with cost 207.87
+/planner_4 found solution with cost 201.95
+/planner_1 found solution with cost 190.0
+/planner_0 found solution with cost 192.37
+/planner_2 won consensus of iteration # 103.0 with cost 82.0894233627
+
+/planner_3 found solution with cost 146.12
+/planner_4 found solution with cost 135.86
+/planner_1 found solution with cost 205.95
+/planner_0 found solution with cost 233.21
+/planner_2 won consensus of iteration # 104.0 with cost 82.0894233627
+
+/controller_0 v 0.604 w -0.072 e_rho 0.037 e_phi 0.207 angle(v) -61.0
+/controller_1 v 0.366 w 0.041 e_rho -0.034 e_phi -2.405 angle(v) 23.0
+/controller_3 v 1.25 w 0.1 e_rho -0.065 e_phi 6.112 angle(v) 148.0
+/controller_2 v 0.343 w 0.036 e_rho -0.013 e_phi -2.555 angle(v) 89.0
+/controller_4 v 0.308 w 0.038 e_rho -0.027 e_phi -2.952 angle(v) -125.0
+/planner_0 found solution with cost 180.83
+/planner_3 found solution with cost 172.83
+/planner_1 found solution with cost 180.13
+/planner_4 found solution with cost 130.92
+/planner_2 won consensus of iteration # 105.0 with cost 82.0894233627
+
+/planner_3 found solution with cost 203.38
+/planner_4 found solution with cost 138.31
+/planner_1 found solution with cost 137.81
+/planner_0 found solution with cost 161.95
+/planner_2 won consensus of iteration # 106.0 with cost 70.0894233627
+
+/controller_2 v 0.465 w 0.03 e_rho -0.015 e_phi -1.365 angle(v) 114.0
+/controller_1 v 0.458 w 0.054 e_rho -0.051 e_phi -1.529 angle(v) 53.0
+/controller_0 v 0.395 w 0.068 e_rho -0.005 e_phi -2.015 angle(v) -25.0
+/controller_4 v 0.523 w 0.04 e_rho -0.038 e_phi -0.831 angle(v) -100.0
+/controller_3 v 0.936 w 0.064 e_rho -0.03 e_phi 3.183 angle(v) 180.0
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_2 obstacle detected, deleting RRT
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_3 won consensus of iteration # 107.0 with cost 68.0959358168
+
+/planner_4 found solution with cost 165.62
+/planner_2 found solution with cost 173.62
+/planner_3 found solution with cost 121.62
+/planner_1 found solution with cost 127.28
+/planner_0 found solution with cost 145.2
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_3 won consensus of iteration # 108.0 with cost 121.617137223
+
+/controller_3 v 0.521 w 0.075 e_rho 0.036 e_phi -0.762 angle(v) -149.0
+/controller_2 v 0.487 w 0.255 e_rho 0.194 e_phi -0.408 angle(v) 119.0
+/controller_4 v 0.528 w -0.178 e_rho -0.178 e_phi -0.853 angle(v) -58.0
+/controller_0 v 0.784 w 0.128 e_rho -0.132 e_phi 0.928 angle(v) 3.0
+/controller_1 v 0.485 w 0.108 e_rho -0.013 e_phi -0.816 angle(v) 71.0
+/planner_0 found solution with cost 140.98
+/planner_4 found solution with cost 130.64
+/planner_2 found solution with cost 225.98
+/planner_1 found solution with cost 167.62
+/planner_3 won consensus of iteration # 109.0 with cost 119.617137223
+
+/planner_1 found solution with cost 135.12
+/planner_0 found solution with cost 127.55
+/planner_2 found solution with cost 228.42
+/planner_4 found solution with cost 114.5
+/planner_4 won consensus of iteration # 110.0 with cost 114.499667572
+
+/planner_0 found solution with cost 161.76
+/controller_2 v 0.691 w 0.058 e_rho -0.106 e_phi 0.821 angle(v) 166.0
+/controller_1 v 0.528 w 0.084 e_rho -0.185 e_phi -1.918 angle(v) 122.0
+/controller_0 v 0.69 w 0.116 e_rho -0.542 e_phi -2.41 angle(v) 88.0
+/controller_3 v 1.244 w -0.598 e_rho 0.562 e_phi 12.059 angle(v) -169.0
+/controller_4 v -0.066 w -0.338 e_rho 0.09 e_phi -9.452 angle(v) 161.0
+/planner_2 found solution with cost 135.74
+/planner_3 found solution with cost 176.48
+/planner_1 found solution with cost 145.37
+/planner_4 won consensus of iteration # 111.0 with cost 112.499667572
+
+/planner_1 found solution with cost 132.91
+/planner_2 found solution with cost 157.36
+/planner_3 found solution with cost 187.76
+/planner_0 found solution with cost 143.28
+	/planner_2 I'm ok with the prior map now!
+	/planner_0 I'm ok with the prior map now!
+/planner_4 won consensus of iteration # 112.0 with cost 110.499667572
+
+/controller_3 v 1.079 w -0.128 e_rho 0.819 e_phi 3.899 angle(v) -174.0
+/controller_1 v 0.761 w -0.047 e_rho -0.293 e_phi -0.844 angle(v) 131.0
+/controller_0 v 0.478 w -0.235 e_rho -0.516 e_phi -5.089 angle(v) 126.0
+/controller_2 v 0.941 w -0.181 e_rho -0.171 e_phi 4.282 angle(v) 173.0
+/controller_4 v -0.081 w -0.089 e_rho -0.079 e_phi -4.94 angle(v) 15.0
+/planner_1 found solution with cost 111.62
+/planner_3 found solution with cost 240.12
+/planner_4 won consensus of iteration # 113.0 with cost 120.499667572
+
+/planner_3 found solution with cost 140.62
+/planner_1 found solution with cost 138.73
+	/planner_3 I'm ok with the prior map now!
+/planner_4 won consensus of iteration # 114.0 with cost 120.499667572
+
+/controller_1 v 0.548 w 0.009 e_rho -0.241 e_phi -1.381 angle(v) 169.0
+/controller_3 v 0.549 w 0.099 e_rho -0.039 e_phi -1.363 angle(v) -71.0
+/controller_2 v 0.663 w -0.042 e_rho 0.136 e_phi 1.971 angle(v) -165.0
+/controller_0 v 0.636 w -0.002 e_rho 0.102 e_phi -0.26 angle(v) 59.0
+/controller_4 v 0.449 w 0.01 e_rho -0.08 e_phi -0.873 angle(v) 8.0
+/planner_1 found solution with cost 208.64
+/planner_4 won consensus of iteration # 115.0 with cost 120.499667572
+
+/planner_1 found solution with cost 186.44
+	/planner_1 I'm ok with the prior map now!
+	/planner_4 I'm ok with the prior map now!
+/planner_4 won consensus of iteration # 116.0 with cost 120.499667572
+
+/controller_1 v 0.471 w 0.029 e_rho -0.071 e_phi -0.551 angle(v) -170.0
+/controller_4 v 0.45 w 0.022 e_rho 0.07 e_phi -0.991 angle(v) 26.0
+/controller_3 v 0.528 w 0.043 e_rho -0.18 e_phi -1.044 angle(v) -13.0
+/controller_2 v 0.672 w 0.097 e_rho 0.181 e_phi 0.07 angle(v) -124.0
+/controller_0 v 0.847 w 0.073 e_rho -0.11 e_phi 0.926 angle(v) 116.0
+/planner_4 won consensus of iteration # 117.0 with cost 120.499667572
+
+/planner_4 won consensus of iteration # 118.0 with cost 120.499667572
+
+/controller_3 v 0.456 w 0.019 e_rho -0.035 e_phi -0.571 angle(v) 6.0
+/controller_2 v 0.725 w 0.065 e_rho -0.131 e_phi -0.09 angle(v) -58.0
+/controller_4 v 0.611 w 0.067 e_rho 0.146 e_phi -0.545 angle(v) 58.0
+/controller_1 v 0.319 w 0.003 e_rho 0.064 e_phi -2.545 angle(v) -155.0
+/controller_0 v 0.861 w -0.027 e_rho -0.261 e_phi 1.749 angle(v) 162.0
+/planner_4 won consensus of iteration # 119.0 with cost 120.499667572
+
+/planner_4 won consensus of iteration # 120.0 with cost 120.499667572
+
+/controller_0 v 0.476 w 0.011 e_rho -0.086 e_phi -0.574 angle(v) -166.0
+/controller_4 v 0.747 w 0.124 e_rho -0.168 e_phi 0.022 angle(v) 126.0
+/controller_3 v 0.472 w 0.027 e_rho 0.097 e_phi -0.799 angle(v) 25.0
+/controller_2 v 0.667 w 0.051 e_rho -0.223 e_phi 0.176 angle(v) -12.0
+/controller_1 v 0.618 w 0.066 e_rho 0.142 e_phi -0.537 angle(v) -120.0
+/planner_4 won consensus of iteration # 121.0 with cost 120.499667572
+
+/planner_4 won consensus of iteration # 122.0 with cost 120.499667572
+
+/controller_1 v 0.639 w 0.099 e_rho -0.169 e_phi -0.812 angle(v) -48.0
+/controller_3 v 0.681 w 0.102 e_rho 0.177 e_phi -0.017 angle(v) 64.0
+/controller_2 v 0.53 w -0.006 e_rho -0.03 e_phi 0.322 angle(v) 9.0
+/controller_0 v 0.684 w -0.039 e_rho 0.093 e_phi 1.564 angle(v) -149.0
+/controller_4 v 0.493 w 0.073 e_rho -0.202 e_phi -1.381 angle(v) 177.0
+/planner_4 won consensus of iteration # 123.0 with cost 120.499667572
+
+/planner_4 won consensus of iteration # 124.0 with cost 108.499667572
+
+/controller_1 v 0.441 w 0.057 e_rho -0.178 e_phi -1.759 angle(v) 1.0
+/controller_3 v 0.755 w 0.102 e_rho -0.191 e_phi 0.18 angle(v) 134.0
+/controller_4 v 0.442 w 0.018 e_rho -0.053 e_phi -0.848 angle(v) -164.0
+/controller_2 v 0.536 w 0.045 e_rho 0.113 e_phi -0.352 angle(v) 33.0
+/controller_0 v 0.814 w 0.103 e_rho 0.149 e_phi 1.154 angle(v) -111.0
+/planner_4 won consensus of iteration # 125.0 with cost 106.499667572
+
+/planner_4 won consensus of iteration # 126.0 with cost 104.499667572
+
+/controller_0 v 0.985 w 0.009 e_rho -0.533 e_phi 0.092 angle(v) -22.0
+/controller_2 v 1.095 w 0.092 e_rho 0.35 e_phi 4.098 angle(v) 57.0
+/controller_3 v 0.246 w -0.01 e_rho 0.154 e_phi -3.396 angle(v) 125.0
+/controller_1 v 0.739 w 0.033 e_rho -0.254 e_phi 1.208 angle(v) 26.0
+/controller_4 v 0.26 w 0.158 e_rho 0.123 e_phi -3.136 angle(v) -146.0
+/planner_4 won consensus of iteration # 127.0 with cost 102.499667572
+
+/planner_4 won consensus of iteration # 128.0 with cost 100.499667572
+
+/controller_1 v 0.726 w 0.046 e_rho -0.033 e_phi 1.237 angle(v) 49.0
+/controller_3 v 0.448 w 0.064 e_rho 0.227 e_phi -0.925 angle(v) 166.0
+/controller_4 v 0.431 w 0.058 e_rho -0.004 e_phi -2.279 angle(v) -87.0
+/controller_2 v 0.765 w 0.098 e_rho -0.102 e_phi 0.778 angle(v) 129.0
+/controller_0 v 0.665 w 0.077 e_rho -0.378 e_phi -0.799 angle(v) 17.0
+/planner_4 won consensus of iteration # 129.0 with cost 98.4996675722
+
+/planner_4 won consensus of iteration # 130.0 with cost 108.499667572
+
+/controller_1 v 0.915 w 0.02 e_rho -0.017 e_phi 1.513 angle(v) 89.0
+/controller_0 v 0.476 w -0.01 e_rho -0.203 e_phi -1.467 angle(v) 46.0
+/controller_3 v 0.584 w 0.104 e_rho 0.334 e_phi -0.58 angle(v) -160.0
+/controller_2 v 0.597 w 0.097 e_rho -0.109 e_phi 0.544 angle(v) 172.0
+/controller_4 v 0.584 w 0.147 e_rho -0.239 e_phi -1.103 angle(v) -24.0
+/planner_4 won consensus of iteration # 131.0 with cost 108.499667572
+
+/planner_4 won consensus of iteration # 132.0 with cost 108.499667572
+
+/controller_0 v 0.802 w -0.101 e_rho 0.195 e_phi 2.515 angle(v) 35.0
+/controller_2 v 0.468 w 0.029 e_rho 0.015 e_phi -0.483 angle(v) -162.0
+/controller_1 v 0.556 w 0.063 e_rho -0.234 e_phi -1.565 angle(v) 155.0
+/controller_3 v 0.697 w 0.201 e_rho -0.054 e_phi -0.153 angle(v) -83.0
+/controller_4 v 0.399 w 0.021 e_rho -0.115 e_phi -1.756 angle(v) 2.0
+/planner_4 won consensus of iteration # 133.0 with cost 108.499667572
+
+/planner_4 won consensus of iteration # 134.0 with cost 108.499667572
+
+/controller_2 v 0.546 w 0.032 e_rho 0.172 e_phi -0.655 angle(v) -144.0
+/controller_4 v 0.452 w 0.041 e_rho -0.001 e_phi -0.643 angle(v) 17.0
+/controller_1 v 0.484 w 0.013 e_rho -0.107 e_phi -0.76 angle(v) 177.0
+/controller_0 v 0.889 w 0.07 e_rho 0.234 e_phi 1.875 angle(v) 71.0
+/controller_3 v 0.531 w 0.071 e_rho -0.18 e_phi -1.416 angle(v) -28.0
+/planner_4 won consensus of iteration # 135.0 with cost 108.499667572
+
+/planner_4 won consensus of iteration # 136.0 with cost 108.499667572
+
+/controller_4 v 0.503 w 0.008 e_rho 0.144 e_phi -1.085 angle(v) 38.0
+/controller_2 v 0.65 w 0.09 e_rho 0.027 e_phi -0.505 angle(v) -88.0
+/controller_3 v 0.483 w 0.039 e_rho -0.092 e_phi -0.65 angle(v) -3.0
+/controller_1 v 0.414 w 0.005 e_rho -0.01 e_phi -1.2 angle(v) -158.0
+/controller_0 v 0.926 w 0.028 e_rho -0.217 e_phi 1.828 angle(v) 140.0
+/planner_4 won consensus of iteration # 137.0 with cost 108.499667572
+
+/planner_4 won consensus of iteration # 138.0 with cost 108.499667572
+
+/controller_2 v 0.658 w 0.076 e_rho -0.215 e_phi -0.455 angle(v) -31.0
+/controller_1 v 0.494 w 0.058 e_rho 0.097 e_phi -1.127 angle(v) -137.0
+/controller_0 v 0.726 w 0.11 e_rho -0.211 e_phi 1.315 angle(v) 179.0
+/controller_3 v 0.396 w 0.018 e_rho 0.035 e_phi -1.308 angle(v) 15.0
+/controller_4 v 0.704 w 0.099 e_rho 0.054 e_phi -0.015 angle(v) 86.0
+/planner_4 won consensus of iteration # 139.0 with cost 96.4996675722
+
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 140.0 with cost 106.499667572
+
+/controller_1 v 0.516 w 0.207 e_rho -0.141 e_phi -1.849 angle(v) -65.0
+/controller_0 v 0.296 w -0.123 e_rho 0.162 e_phi -2.496 angle(v) 174.0
+/controller_4 v 0.789 w -0.074 e_rho -0.018 e_phi 1.677 angle(v) 130.0
+/controller_2 v 0.629 w 0.16 e_rho -0.368 e_phi -0.72 angle(v) 21.0
+/controller_3 v 0.718 w 0.131 e_rho 0.031 e_phi 1.296 angle(v) 48.0
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 141.0 with cost 106.499667572
+
+/planner_4 won consensus of iteration # 142.0 with cost 106.499667572
+
+/controller_1 v 0.635 w 0.069 e_rho -0.246 e_phi -0.65 angle(v) -21.0
+/controller_0 v 0.63 w -0.042 e_rho 0.208 e_phi 0.055 angle(v) -142.0
+/controller_2 v 0.452 w 0.015 e_rho 0.035 e_phi -0.639 angle(v) 20.0
+/controller_3 v 0.676 w 0.128 e_rho 0.028 e_phi -0.313 angle(v) 97.0
+/controller_4 v 0.451 w 0.019 e_rho -0.119 e_phi -1.038 angle(v) -175.0
+/planner_4 won consensus of iteration # 143.0 with cost 94.4996675722
+
+/planner_4 won consensus of iteration # 144.0 with cost 92.4996675722
+
+/controller_1 v 0.689 w 0.123 e_rho -0.311 e_phi 0.248 angle(v) 17.0
+/controller_3 v 0.62 w -0.137 e_rho 0.065 e_phi 0.706 angle(v) 131.0
+/controller_2 v 0.814 w 0.145 e_rho 0.048 e_phi 1.946 angle(v) 53.0
+/controller_4 v 0.332 w -0.179 e_rho 0.286 e_phi -2.999 angle(v) 161.0
+/controller_0 v 0.639 w 0.306 e_rho -0.248 e_phi -0.826 angle(v) -54.0
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 145.0 with cost 90.4996675722
+
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 146.0 with cost 88.4996675722
+
+/controller_3 v 0.591 w 0.057 e_rho 0.055 e_phi 1.454 angle(v) 167.0
+/controller_2 v 0.811 w 0.019 e_rho 0.01 e_phi 0.725 angle(v) 99.0
+/controller_4 v 0.513 w 0.049 e_rho 0.309 e_phi -1.887 angle(v) -149.0
+/controller_1 v 0.592 w -0.025 e_rho -0.189 e_phi -0.287 angle(v) 49.0
+/controller_0 v 0.633 w 0.175 e_rho -0.398 e_phi -1.454 angle(v) 2.0
+/planner_4 won consensus of iteration # 147.0 with cost 86.4996675722
+
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 148.0 with cost 84.4996675722
+
+/controller_1 v 0.642 w 0.045 e_rho 0.048 e_phi -0.008 angle(v) 57.0
+/controller_3 v 0.421 w 0.039 e_rho 0.291 e_phi -2.258 angle(v) 170.0
+/controller_0 v 0.819 w -0.085 e_rho -0.368 e_phi 1.158 angle(v) 20.0
+/controller_2 v 0.744 w 0.031 e_rho -0.041 e_phi 1.52 angle(v) 142.0
+/controller_4 v 0.532 w 0.137 e_rho -0.242 e_phi -2.092 angle(v) -45.0
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 149.0 with cost 82.4996675722
+
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 150.0 with cost 92.4996675722
+
+/controller_1 v 0.709 w 0.087 e_rho -0.08 e_phi -0.212 angle(v) 109.0
+/controller_0 v 0.77 w 0.05 e_rho -0.278 e_phi 1.086 angle(v) 50.0
+/controller_3 v 0.576 w 0.072 e_rho 0.327 e_phi -1.224 angle(v) -145.0
+/controller_2 v 0.468 w 0.023 e_rho 0.01 e_phi -0.283 angle(v) 175.0
+/controller_4 v 0.568 w 0.069 e_rho -0.326 e_phi -1.744 angle(v) -0.0
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 151.0 with cost 92.4996675722
+
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 152.0 with cost 92.4996675722
+
+/controller_2 v 0.493 w -0.001 e_rho 0.096 e_phi -0.437 angle(v) -158.0
+/controller_4 v 0.47 w 0.011 e_rho -0.066 e_phi -0.572 angle(v) 5.0
+/controller_0 v 0.81 w -0.053 e_rho 0.213 e_phi 1.702 angle(v) 49.0
+/controller_1 v 0.541 w 0.06 e_rho -0.214 e_phi -1.18 angle(v) 168.0
+/controller_3 v 0.602 w 0.086 e_rho -0.074 e_phi -0.948 angle(v) -64.0
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 153.0 with cost 92.4996675722
+
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 154.0 with cost 92.4996675722
+
+/controller_3 v 0.475 w 0.052 e_rho -0.184 e_phi -1.663 angle(v) -11.0
+/controller_4 v 0.652 w 0.085 e_rho 0.038 e_phi 1.49 angle(v) 27.0
+/controller_0 v 0.646 w 0.148 e_rho -0.081 e_phi -0.539 angle(v) 115.0
+/controller_2 v 0.658 w 0.054 e_rho 0.164 e_phi -0.09 angle(v) -123.0
+/controller_1 v 0.447 w 0.034 e_rho -0.092 e_phi -0.95 angle(v) -167.0
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 155.0 with cost 92.4996675722
+
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 156.0 with cost 92.4996675722
+
+/controller_1 v 0.502 w 0.035 e_rho 0.063 e_phi -0.374 angle(v) -153.0
+/controller_0 v 0.745 w 0.066 e_rho -0.279 e_phi 0.479 angle(v) 167.0
+/controller_3 v 0.459 w 0.007 e_rho -0.037 e_phi -0.567 angle(v) 5.0
+/controller_2 v 0.632 w 0.109 e_rho -0.098 e_phi -0.719 angle(v) -61.0
+/controller_4 v 0.645 w 0.067 e_rho 0.149 e_phi -0.157 angle(v) 57.0
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 157.0 with cost 92.4996675722
+
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 158.0 with cost 80.4996675722
+
+/controller_1 v 0.626 w 0.056 e_rho 0.155 e_phi -0.415 angle(v) -122.0
+/controller_3 v 0.457 w 0.037 e_rho 0.088 e_phi -0.931 angle(v) 25.0
+/controller_2 v 0.549 w 0.042 e_rho -0.191 e_phi -0.891 angle(v) -12.0
+/controller_4 v 0.754 w 0.09 e_rho -0.131 e_phi 0.138 angle(v) 120.0
+/controller_0 v 0.546 w -0.016 e_rho -0.079 e_phi 0.268 angle(v) -171.0
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 159.0 with cost 90.4996675722
+
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 160.0 with cost 90.4996675722
+
+/controller_1 v 0.559 w 0.061 e_rho -0.192 e_phi -1.675 angle(v) -43.0
+/controller_0 v 0.583 w 0.145 e_rho 0.101 e_phi 0.719 angle(v) -152.0
+/controller_3 v 0.747 w 0.057 e_rho 0.214 e_phi 0.596 angle(v) 57.0
+/controller_2 v 0.483 w 0.016 e_rho -0.105 e_phi -0.521 angle(v) 17.0
+/controller_4 v 0.599 w 0.077 e_rho -0.239 e_phi -0.521 angle(v) 174.0
+/planner_4 won consensus of iteration # 161.0 with cost 90.4996675722
+
+	/planner_2 the prior map is bad!
+	/planner_0 the prior map is bad!
+/planner_4 won consensus of iteration # 162.0 with cost 78.4996675722
+
+/controller_3 v 0.771 w 0.072 e_rho -0.168 e_phi 0.31 angle(v) 130.0
+/controller_1 v 0.494 w 0.061 e_rho -0.204 e_phi -1.344 angle(v) -1.0
+/controller_4 v 0.411 w 0.073 e_rho -0.068 e_phi -1.117 angle(v) -163.0
+/controller_0 v 0.756 w 0.115 e_rho 0.204 e_phi 0.655 angle(v) -119.0
+/controller_2 v 0.522 w 0.029 e_rho 0.118 e_phi -0.368 angle(v) 29.0
+/planner_0 found solution with cost 240.88
+/planner_2 found solution with cost 102.78
+/planner_4 won consensus of iteration # 163.0 with cost 88.4996675722
+
+/planner_2 found solution with cost 232.95
+	/planner_3 the prior map is bad!
+/planner_4 won consensus of iteration # 164.0 with cost 76.4996675722
+
+/controller_3 v 0.516 w 0.075 e_rho -0.114 e_phi -0.604 angle(v) 168.0
+/controller_0 v 0.701 w -0.061 e_rho -0.186 e_phi -0.21 angle(v) -44.0
+/controller_2 v 0.742 w 0.073 e_rho 0.153 e_phi 0.583 angle(v) 68.0
+/controller_1 v 0.377 w 0.022 e_rho -0.07 e_phi -1.766 angle(v) 22.0
+/controller_4 v 0.562 w 0.141 e_rho 0.117 e_phi 0.139 angle(v) -148.0
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 165.0 with cost 74.4996675722
+
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_1 the prior map is bad!
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 166.0 with cost 72.4996675722
+
+/controller_1 v 0.654 w -0.027 e_rho -0.12 e_phi 0.187 angle(v) 56.0
+/controller_2 v 0.843 w 0.04 e_rho -0.097 e_phi 1.267 angle(v) 125.0
+/controller_4 v 0.553 w 0.158 e_rho 0.293 e_phi -1.34 angle(v) -123.0
+/controller_0 v 0.661 w 0.129 e_rho -0.429 e_phi -1.242 angle(v) 20.0
+/controller_3 v 0.429 w 0.066 e_rho 0.146 e_phi -0.635 angle(v) 172.0
+/planner_0 found solution with cost 91.11
+/planner_1 found solution with cost 223.76
+/planner_2 found solution with cost 101.23
+/planner_4 won consensus of iteration # 167.0 with cost 70.4996675722
+
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 168.0 with cost 80.4996675722
+
+/controller_2 v 0.311 w 0.031 e_rho 0.049 e_phi -2.06 angle(v) 157.0
+/controller_3 v 0.303 w 0.103 e_rho 0.125 e_phi -3.118 angle(v) -147.0
+/controller_0 v 0.866 w -0.065 e_rho -0.36 e_phi 2.135 angle(v) 30.0
+/controller_4 v 0.899 w -0.017 e_rho -0.495 e_phi -0.336 angle(v) -21.0
+/controller_1 v 1.019 w 0.057 e_rho 0.344 e_phi 3.013 angle(v) 58.0
+/planner_2 found solution with cost 264.38
+/planner_3 found solution with cost 208.86
+/planner_0 found solution with cost 93.62
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 169.0 with cost 80.4996675722
+
+/planner_1 found solution with cost 264.26
+/planner_2 found solution with cost 91.52
+/planner_0 found solution with cost 258.96
+/planner_4 won consensus of iteration # 170.0 with cost 80.4996675722
+
+/controller_3 v 0.609 w 0.048 e_rho 0.086 e_phi -1.038 angle(v) -101.0
+/controller_1 v 0.617 w 0.118 e_rho -0.27 e_phi -1.323 angle(v) 150.0
+/controller_0 v 0.727 w -0.03 e_rho 0.165 e_phi 2.089 angle(v) 29.0
+/controller_4 v 0.475 w 0.039 e_rho -0.182 e_phi -1.274 angle(v) 1.0
+/controller_2 v 0.459 w 0.011 e_rho 0.004 e_phi -0.32 angle(v) -166.0
+/planner_2 found solution with cost 267.66
+/planner_0 found solution with cost 252.39
+/planner_1 found solution with cost 134.27
+/planner_3 found solution with cost 251.28
+/planner_4 won consensus of iteration # 171.0 with cost 80.4996675722
+
+/planner_1 found solution with cost 154.7
+/planner_0 found solution with cost 101.73
+/planner_2 found solution with cost 247.8
+/planner_3 found solution with cost 280.43
+/planner_4 won consensus of iteration # 172.0 with cost 80.4996675722
+
+/controller_0 v 0.969 w -0.153 e_rho 0.352 e_phi 2.501 angle(v) 60.0
+/controller_2 v 0.517 w 0.031 e_rho 0.171 e_phi -0.859 angle(v) -148.0
+/controller_3 v 0.652 w 0.042 e_rho -0.229 e_phi -0.744 angle(v) -32.0
+/controller_4 v 0.424 w 0.02 e_rho -0.021 e_phi -0.811 angle(v) 16.0
+/controller_1 v 0.46 w 0.042 e_rho -0.175 e_phi -1.338 angle(v) -176.0
+/planner_1 found solution with cost 115.54
+/planner_0 found solution with cost 222.05
+/planner_4 won consensus of iteration # 173.0 with cost 80.4996675722
+
+/planner_0 found solution with cost 272.38
+/planner_4 won consensus of iteration # 174.0 with cost 80.4996675722
+
+/controller_1 v 0.43 w 0.028 e_rho -0.036 e_phi -0.83 angle(v) -159.0
+/controller_0 v 0.814 w 0.137 e_rho -0.272 e_phi 0.549 angle(v) 146.0
+/controller_2 v 0.723 w 0.198 e_rho 0.111 e_phi 0.141 angle(v) -99.0
+/controller_4 v 0.579 w 0.029 e_rho 0.147 e_phi -0.093 angle(v) 35.0
+/controller_3 v 0.468 w 0.036 e_rho -0.121 e_phi -0.871 angle(v) -2.0
+/planner_3 found solution with cost 216.43
+/planner_1 found solution with cost 231.98
+/planner_4 won consensus of iteration # 175.0 with cost 80.4996675722
+
+/planner_0 found solution with cost 238.43
+/planner_4 won consensus of iteration # 176.0 with cost 80.4996675722
+
+/controller_3 v 0.381 w 0.012 e_rho 0.03 e_phi -1.315 angle(v) 15.0
+/controller_1 v 0.561 w 0.056 e_rho 0.17 e_phi -0.518 angle(v) -143.0
+/controller_4 v 0.808 w 0.126 e_rho 0.097 e_phi 0.693 angle(v) 84.0
+/controller_2 v 0.744 w 0.07 e_rho -0.258 e_phi 0.113 angle(v) -29.0
+/controller_0 v 0.539 w 0.006 e_rho -0.139 e_phi -0.103 angle(v) -179.0
+/planner_2 found solution with cost 224.43
+/planner_1 found solution with cost 218.21
+/planner_0 found solution with cost 91.52
+/planner_4 obstacle detected, deleting RRT
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_0 won consensus of iteration # 177.0 with cost 91.5165730228
+
+/planner_1 found solution with cost 102.28
+/planner_2 found solution with cost 88.62
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_2 won consensus of iteration # 178.0 with cost 88.6171392189
+
+/controller_2 v 0.665 w -0.007 e_rho -0.212 e_phi 0.57 angle(v) 5.0
+/controller_1 v 0.611 w 0.185 e_rho -0.235 e_phi -1.494 angle(v) -58.0
+/controller_0 v 0.327 w -0.112 e_rho 0.183 e_phi -2.26 angle(v) 174.0
+/controller_3 v 0.655 w 0.03 e_rho 0.174 e_phi 0.482 angle(v) 38.0
+/controller_4 v 0.743 w -0.031 e_rho -0.081 e_phi 1.101 angle(v) 138.0
+/planner_0 found solution with cost 98.62
+/planner_1 found solution with cost 103.18
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_2 won consensus of iteration # 179.0 with cost 86.6171392189
+
+/planner_0 found solution with cost 113.42
+/planner_3 found solution with cost 100.62
+/planner_1 found solution with cost 222.44
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_2 won consensus of iteration # 180.0 with cost 84.6171392189
+
+/controller_1 v 0.359 w -0.037 e_rho -0.15 e_phi -2.869 angle(v) -16.0
+/controller_3 v 0.792 w 0.088 e_rho -0.338 e_phi 0.51 angle(v) 119.0
+/controller_2 v 0.582 w 0.184 e_rho -0.093 e_phi -0.459 angle(v) 37.0
+/controller_4 v 0.842 w -0.075 e_rho 0.291 e_phi 2.471 angle(v) 144.0
+/controller_0 v 0.388 w 0.059 e_rho 0.125 e_phi -1.78 angle(v) -134.0
+/planner_0 found solution with cost 234.76
+/planner_1 found solution with cost 88.28
+/planner_3 found solution with cost 102.62
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_2 won consensus of iteration # 181.0 with cost 94.6171392189
+
+/planner_0 found solution with cost 217.2
+/planner_1 found solution with cost 133.62
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_2 won consensus of iteration # 182.0 with cost 94.6171392189
+
+/controller_1 v 0.602 w 0.066 e_rho 0.083 e_phi -0.886 angle(v) -17.0
+/controller_4 v 0.726 w 0.057 e_rho -0.061 e_phi 0.37 angle(v) -148.0
+/controller_0 v 0.569 w 0.086 e_rho -0.094 e_phi 0.579 angle(v) -74.0
+/controller_2 v 0.637 w 0.048 e_rho -0.219 e_phi 0.094 angle(v) 84.0
+/controller_3 v 0.45 w -0.011 e_rho 0.138 e_phi -1.336 angle(v) 117.0
+/planner_3 found solution with cost 89.62
+/planner_0 found solution with cost 282.39
+/planner_2 won consensus of iteration # 183.0 with cost 94.6171392189
+
+/planner_0 found solution with cost 278.41
+/planner_3 found solution with cost 101.25
+/planner_2 won consensus of iteration # 184.0 with cost 94.6171392189
+
+/controller_1 v 0.643 w 0.049 e_rho -0.258 e_phi -1.068 angle(v) 58.0
+/controller_3 v 0.702 w 0.114 e_rho 0.122 e_phi 0.024 angle(v) 165.0
+/controller_4 v 0.633 w 0.068 e_rho -0.248 e_phi -0.044 angle(v) -89.0
+/controller_0 v 0.541 w 0.042 e_rho 0.142 e_phi -0.375 angle(v) -58.0
+/controller_2 v 0.48 w 0.032 e_rho -0.006 e_phi -0.209 angle(v) 103.0
+/planner_1 found solution with cost 85.62
+/planner_3 found solution with cost 271.39
+/planner_0 found solution with cost 225.85
+/planner_1 won consensus of iteration # 185.0 with cost 85.6171414355
+
+/planner_0 found solution with cost 92.42
+/planner_2 found solution with cost 94.35
+/planner_3 found solution with cost 242.08
+/planner_1 won consensus of iteration # 186.0 with cost 83.6171414355
+
+/controller_1 v 0.624 w -0.038 e_rho 0.014 e_phi 0.96 angle(v) 66.0
+/controller_0 v 0.878 w 0.161 e_rho -0.124 e_phi 1.202 angle(v) 2.0
+/controller_3 v 0.555 w 0.115 e_rho -0.236 e_phi -1.395 angle(v) -114.0
+/controller_2 v 0.542 w -0.014 e_rho 0.326 e_phi -1.186 angle(v) 104.0
+/controller_4 v 0.416 w 0.072 e_rho -0.081 e_phi -1.483 angle(v) -60.0
+/planner_2 found solution with cost 99.12
+/planner_3 found solution with cost 141.62
+/planner_0 found solution with cost 148.37
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_1 won consensus of iteration # 187.0 with cost 93.6171414355
+
+/planner_2 found solution with cost 156.32
+/planner_3 found solution with cost 255.81
+/planner_0 found solution with cost 104.62
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_1 won consensus of iteration # 188.0 with cost 81.6171414355
+
+/planner_3 found solution with cost 95.62
+/controller_1 v 0.594 w 0.111 e_rho 0.001 e_phi 0.188 angle(v) 104.0
+/controller_4 v 0.596 w 0.008 e_rho -0.067 e_phi -0.306 angle(v) -31.0
+/controller_0 v 0.814 w 0.087 e_rho -0.153 e_phi 1.38 angle(v) 42.0
+/controller_3 v 0.462 w -0.071 e_rho -0.001 e_phi -1.215 angle(v) -106.0
+/controller_2 v 0.585 w 0.123 e_rho 0.049 e_phi -0.047 angle(v) 174.0
+/planner_2 found solution with cost 107.62
+/planner_0 found solution with cost 117.28
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_1 won consensus of iteration # 189.0 with cost 79.6171414355
+
+/planner_3 found solution with cost 105.19
+/planner_0 found solution with cost 127.76
+/planner_2 found solution with cost 121.74
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_1 won consensus of iteration # 190.0 with cost 89.6171414355
+
+/planner_3 found solution with cost 100.85
+/controller_4 v 0.783 w 0.054 e_rho -0.355 e_phi 0.606 angle(v) 26.0
+/controller_1 v 0.661 w 0.19 e_rho 0.156 e_phi 1.704 angle(v) 131.0
+/controller_0 v 0.765 w -0.126 e_rho 0.032 e_phi 1.25 angle(v) 64.0
+/controller_3 v 0.541 w -0.004 e_rho -0.2 e_phi -1.744 angle(v) -42.0
+/controller_2 v 0.249 w -0.057 e_rho 0.087 e_phi -3.479 angle(v) -156.0
+/planner_0 found solution with cost 100.62
+/planner_2 found solution with cost 79.98
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_1 won consensus of iteration # 191.0 with cost 89.6171414355
+
+/planner_2 found solution with cost 220.1
+/planner_3 found solution with cost 129.99
+/planner_0 found solution with cost 254.61
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_1 won consensus of iteration # 192.0 with cost 77.6171414355
+
+/planner_2 found solution with cost 79.62
+/controller_0 v 0.67 w 0.112 e_rho -0.076 e_phi -0.048 angle(v) 117.0
+/controller_2 v 0.601 w 0.116 e_rho 0.085 e_phi -0.348 angle(v) -113.0
+/controller_4 v 0.554 w 0.045 e_rho 0.035 e_phi -0.118 angle(v) 34.0
+/controller_3 v 0.479 w 0.05 e_rho -0.1 e_phi -1.218 angle(v) -18.0
+/controller_1 v 0.522 w 0.028 e_rho -0.084 e_phi -0.422 angle(v) -167.0
+/planner_3 found solution with cost 81.28
+/planner_0 found solution with cost 97.28
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_1 won consensus of iteration # 193.0 with cost 75.6171414355
+
+/planner_3 found solution with cost 113.62
+/planner_0 found solution with cost 162.78
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_1 won consensus of iteration # 194.0 with cost 73.6171414355
+
+/planner_3 found solution with cost 87.32
+/controller_1 v 0.542 w 0.16 e_rho 0.288 e_phi -0.293 angle(v) -170.0
+/controller_0 v 0.849 w -0.108 e_rho -0.016 e_phi 2.46 angle(v) 143.0
+/controller_2 v 0.365 w 0.11 e_rho -0.152 e_phi -2.717 angle(v) -36.0
+/controller_4 v 0.79 w 0.084 e_rho -0.237 e_phi 0.727 angle(v) 90.0
+/controller_3 v 0.513 w -0.021 e_rho -0.083 e_phi -1.157 angle(v) 18.0
+/planner_0 found solution with cost 94.95
+/planner_2 found solution with cost 130.0
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_1 won consensus of iteration # 195.0 with cost 71.6171414355
+
+/planner_2 found solution with cost 127.28
+/planner_0 found solution with cost 128.97
+/planner_3 found solution with cost 114.41
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_1 won consensus of iteration # 196.0 with cost 81.6171414355
+
+/planner_2 found solution with cost 120.62
+/planner_3 found solution with cost 78.6
+/controller_2 v 0.757 w -0.061 e_rho -0.278 e_phi 0.18 angle(v) -12.0
+/controller_4 v 0.766 w 0.017 e_rho 0.295 e_phi 2.414 angle(v) 83.0
+/controller_0 v 0.495 w -0.013 e_rho 0.317 e_phi -1.557 angle(v) 147.0
+/controller_1 v 0.433 w 0.082 e_rho -0.308 e_phi -3.238 angle(v) -53.0
+/controller_3 v 0.724 w 0.015 e_rho -0.071 e_phi 0.925 angle(v) 39.0
+/planner_0 found solution with cost 100.89
+/planner_1 won consensus of iteration # 197.0 with cost 81.6171414355
+
+/planner_3 found solution with cost 94.13
+/planner_0 found solution with cost 100.4
+/planner_2 found solution with cost 108.62
+/planner_1 won consensus of iteration # 198.0 with cost 81.6171414355
+
+/planner_2 found solution with cost 119.81
+/planner_3 found solution with cost 102.95
+/controller_4 v 0.672 w 0.089 e_rho -0.006 e_phi 0.729 angle(v) 145.0
+/controller_3 v 0.586 w 0.055 e_rho -0.041 e_phi -0.168 angle(v) 79.0
+/controller_1 v 0.458 w 0.055 e_rho -0.033 e_phi -1.426 angle(v) -62.0
+/controller_0 v 0.713 w 0.101 e_rho -0.006 e_phi 1.152 angle(v) -144.0
+/controller_2 v 0.484 w 0.074 e_rho -0.044 e_phi -1.298 angle(v) 11.0
+/planner_0 found solution with cost 88.56
+/planner_1 won consensus of iteration # 199.0 with cost 81.6171414355
+
+/planner_0 found solution with cost 130.04
+/planner_2 found solution with cost 110.66
+/planner_3 found solution with cost 103.09
+/planner_1 won consensus of iteration # 200.0 with cost 81.6171414355
+
+/planner_3 found solution with cost 106.95
+/controller_1 v 0.564 w 0.048 e_rho -0.031 e_phi -0.479 angle(v) -27.0
+/controller_2 v 0.569 w 0.067 e_rho -0.069 e_phi -0.513 angle(v) 50.0
+/controller_4 v 0.562 w 0.043 e_rho -0.009 e_phi -0.466 angle(v) -173.0
+/controller_3 v 0.598 w 0.047 e_rho 0.007 e_phi 0.084 angle(v) 112.0
+/controller_0 v 0.587 w 0.058 e_rho -0.078 e_phi -0.295 angle(v) -94.0
+/planner_2 found solution with cost 108.61
+/planner_0 found solution with cost 108.47
+/planner_1 won consensus of iteration # 201.0 with cost 81.6171414355
+
+/planner_3 found solution with cost 86.95
+/planner_0 found solution with cost 106.95
+/planner_2 found solution with cost 92.88
+/planner_1 won consensus of iteration # 202.0 with cost 81.6171414355
+
+/planner_3 found solution with cost 114.95
+/planner_2 found solution with cost 102.95
+/controller_1 v 0.635 w 0.037 e_rho -0.059 e_phi 0.065 angle(v) 16.0
+/controller_3 v 0.633 w 0.111 e_rho -0.009 e_phi 0.342 angle(v) 153.0
+/controller_4 v 0.661 w 0.038 e_rho -0.072 e_phi 0.355 angle(v) -128.0
+/controller_2 v 0.478 w 0.051 e_rho -0.023 e_phi -1.18 angle(v) 86.0
+/controller_0 v 0.511 w 0.049 e_rho -0.019 e_phi -0.87 angle(v) -59.0
+/planner_0 found solution with cost 116.79
+/planner_1 won consensus of iteration # 203.0 with cost 81.6171414355
+
+/planner_3 found solution with cost 101.14
+/planner_2 found solution with cost 100.62
+/planner_0 found solution with cost 138.62
+/planner_1 won consensus of iteration # 204.0 with cost 81.6171414355
+
+/controller_1 v 0.445 w 0.051 e_rho -0.083 e_phi -1.758 angle(v) 62.0
+/controller_0 v 0.656 w 0.139 e_rho -0.035 e_phi 0.515 angle(v) -21.0
+/controller_3 v 0.518 w 0.013 e_rho -0.031 e_phi -0.97 angle(v) -162.0
+/controller_2 v 0.662 w 0.082 e_rho -0.004 e_phi 0.714 angle(v) 121.0
+/controller_4 v 0.599 w 0.067 e_rho -0.063 e_phi -0.107 angle(v) -89.0
+/planner_2 found solution with cost 92.75
+/planner_3 found solution with cost 110.52
+/planner_0 found solution with cost 127.65
+/planner_1 won consensus of iteration # 205.0 with cost 81.6171414355
+
+/planner_2 found solution with cost 90.99
+/planner_0 found solution with cost 126.67
+/planner_3 found solution with cost 250.29
+/planner_1 won consensus of iteration # 206.0 with cost 81.6171414355
+
+/planner_3 found solution with cost 154.0
+/controller_1 v 0.449 w 0.039 e_rho -0.035 e_phi -1.515 angle(v) 93.0
+/controller_0 v 0.763 w -0.068 e_rho -0.019 e_phi 1.475 angle(v) 12.0
+/controller_2 v 0.413 w 0.06 e_rho -0.046 e_phi -1.987 angle(v) 166.0
+/controller_4 v 0.479 w 0.044 e_rho -0.027 e_phi -1.229 angle(v) -54.0
+/controller_3 v 0.543 w 0.025 e_rho 0.041 e_phi -0.441 angle(v) -132.0
+/planner_0 found solution with cost 72.62
+/planner_0 won consensus of iteration # 207.0 with cost 72.6171370644
+
+/planner_1 found solution with cost 105.51
+/planner_3 found solution with cost 146.48
+/planner_2 found solution with cost 97.1
+/planner_0 won consensus of iteration # 208.0 with cost 70.6171370644
+
+/planner_3 found solution with cost 93.83
+/controller_1 v 0.548 w -0.072 e_rho 0.186 e_phi -0.382 angle(v) 100.0
+/controller_0 v 0.916 w 0.026 e_rho -0.072 e_phi 2.768 angle(v) 47.0
+/controller_3 v 0.446 w 0.059 e_rho -0.094 e_phi -1.888 angle(v) -76.0
+/controller_2 v 0.38 w 0.043 e_rho 0.006 e_phi -1.977 angle(v) -162.0
+/controller_4 v 0.725 w 0.114 e_rho -0.24 e_phi 0.231 angle(v) -5.0
+/planner_2 found solution with cost 98.37
+/planner_1 found solution with cost 138.11
+/planner_0 won consensus of iteration # 209.0 with cost 68.6171370644
+
+/planner_3 found solution with cost 110.0
+/planner_1 found solution with cost 130.44
+/planner_2 found solution with cost 89.14
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_0 won consensus of iteration # 210.0 with cost 78.6171370644
+
+/controller_1 v 0.122 w 0.039 e_rho 0.074 e_phi -4.885 angle(v) 133.0
+/controller_3 v 0.805 w 0.02 e_rho -0.32 e_phi 0.281 angle(v) -37.0
+/controller_4 v 0.919 w 0.117 e_rho 0.024 e_phi 3.65 angle(v) 2.0
+/controller_2 v 0.65 w 0.014 e_rho -0.428 e_phi -1.984 angle(v) -82.0
+/controller_0 v 0.686 w 0.123 e_rho 0.353 e_phi 1.056 angle(v) 53.0
+/planner_1 found solution with cost 117.53
+/planner_2 found solution with cost 102.65
+/planner_3 found solution with cost 133.76
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_0 won consensus of iteration # 211.0 with cost 66.6171370644
+
+/planner_2 found solution with cost 108.62
+/planner_3 found solution with cost 96.62
+/planner_1 found solution with cost 66.28
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_0 won consensus of iteration # 212.0 with cost 64.6171370644
+
+/controller_4 v 0.845 w -0.655 e_rho 0.58 e_phi 6.4 angle(v) 4.0
+/controller_1 v 0.149 w 0.544 e_rho -0.5 e_phi -4.037 angle(v) -84.0
+/controller_0 v -0.207 w -0.356 e_rho 0.3 e_phi -9.073 angle(v) 9.0
+/controller_3 v 1.198 w -0.08 e_rho -0.104 e_phi 5.217 angle(v) -35.0
+/controller_2 v 0.791 w 0.77 e_rho -0.749 e_phi -0.221 angle(v) -51.0
+/planner_2 found solution with cost 98.62
+/planner_1 found solution with cost 137.62
+/planner_3 found solution with cost 120.53
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_0 won consensus of iteration # 213.0 with cost 74.6171370644
+
+/planner_3 found solution with cost 102.03
+/planner_2 found solution with cost 102.81
+/planner_1 found solution with cost 107.95
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_0 won consensus of iteration # 214.0 with cost 74.6171370644
+
+/planner_1 found solution with cost 110.45
+/planner_2 found solution with cost 67.52
+/controller_1 v 0.367 w -0.088 e_rho 0.0 e_phi -2.289 angle(v) -123.0
+/controller_3 v 0.598 w 0.061 e_rho -0.041 e_phi 0.1 angle(v) 19.0
+/controller_2 v 0.681 w -0.007 e_rho -0.141 e_phi 0.148 angle(v) -42.0
+/controller_4 v 0.614 w 0.137 e_rho 0.057 e_phi 0.17 angle(v) 83.0
+/controller_0 v 0.597 w 0.276 e_rho -0.001 e_phi 0.816 angle(v) 162.0
+/planner_3 found solution with cost 92.12
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_0 won consensus of iteration # 215.0 with cost 74.6171370644
+
+/planner_3 found solution with cost 118.45
+/planner_2 found solution with cost 128.06
+/planner_1 found solution with cost 96.24
+/planner_0 won consensus of iteration # 216.0 with cost 74.6171370644
+
+/planner_1 found solution with cost 94.02
+/planner_3 found solution with cost 118.45
+/controller_1 v 0.562 w 0.064 e_rho -0.062 e_phi -0.774 angle(v) -83.0
+/controller_0 v 0.645 w 0.062 e_rho -0.045 e_phi 0.562 angle(v) -159.0
+/controller_4 v 0.569 w 0.046 e_rho -0.073 e_phi -0.603 angle(v) 134.0
+/controller_3 v 0.582 w 0.043 e_rho 0.014 e_phi -0.212 angle(v) 54.0
+/controller_2 v 0.512 w 0.052 e_rho -0.047 e_phi -0.8 angle(v) -10.0
+/planner_2 found solution with cost 103.02
+/planner_0 won consensus of iteration # 217.0 with cost 74.6171370644
+
+/planner_3 found solution with cost 127.14
+/planner_2 found solution with cost 103.05
+/planner_1 found solution with cost 83.29
+/planner_0 won consensus of iteration # 218.0 with cost 74.6171370644
+
+/planner_3 found solution with cost 102.45
+/planner_2 found solution with cost 81.86
+/controller_1 v 0.523 w 0.044 e_rho -0.097 e_phi -1.101 angle(v) -37.0
+/planner_1 found solution with cost 102.76
+/controller_2 v 0.606 w 0.068 e_rho -0.006 e_phi 0.27 angle(v) 24.0
+/controller_0 v 0.594 w 0.111 e_rho -0.005 e_phi -0.079 angle(v) -122.0
+/controller_3 v 0.426 w 0.07 e_rho -0.019 e_phi -1.909 angle(v) 99.0
+/controller_4 v 0.734 w 0.187 e_rho -0.231 e_phi 0.693 angle(v) -176.0
+/planner_0 won consensus of iteration # 219.0 with cost 74.6171370644
+
+/planner_2 found solution with cost 82.46
+/planner_3 found solution with cost 110.45
+/planner_1 found solution with cost 87.72
+/planner_0 won consensus of iteration # 220.0 with cost 74.6171370644
+
+/planner_3 found solution with cost 78.94
+/planner_1 found solution with cost 109.97
+/planner_2 found solution with cost 110.51
+/controller_0 v 0.631 w 0.091 e_rho -0.038 e_phi -0.012 angle(v) -78.0
+/controller_2 v 0.562 w 0.056 e_rho 0.026 e_phi -0.425 angle(v) 60.0
+/controller_4 v 0.572 w 0.058 e_rho -0.038 e_phi -0.212 angle(v) -150.0
+/controller_3 v 0.597 w 0.063 e_rho -0.04 e_phi -0.128 angle(v) 139.0
+/controller_1 v 0.531 w 0.063 e_rho -0.085 e_phi -0.727 angle(v) -0.0
+/planner_0 won consensus of iteration # 221.0 with cost 74.6171370644
+
+/planner_3 found solution with cost 98.45
+/planner_1 found solution with cost 92.38
+/planner_2 found solution with cost 99.05
+	/planner_0 I'm ok with the prior map now!
+/planner_0 won consensus of iteration # 222.0 with cost 74.6171370644
+
+/planner_1 found solution with cost 86.45
+/planner_3 found solution with cost 107.91
+/planner_2 found solution with cost 92.96
+/controller_1 v 0.528 w 0.049 e_rho -0.044 e_phi -0.689 angle(v) 32.0
+/controller_0 v 0.707 w 0.086 e_rho -0.116 e_phi 0.638 angle(v) -36.0
+/controller_4 v 0.608 w 0.063 e_rho -0.01 e_phi -0.073 angle(v) -115.0
+/controller_2 v 0.583 w 0.074 e_rho -0.024 e_phi -0.424 angle(v) 104.0
+/controller_3 v 0.528 w 0.053 e_rho -0.001 e_phi -0.461 angle(v) 174.0
+/planner_0 won consensus of iteration # 223.0 with cost 74.6171370644
+
+/planner_1 found solution with cost 94.45
+/planner_2 found solution with cost 106.33
+/planner_0 won consensus of iteration # 224.0 with cost 74.6171370644
+
+/planner_2 found solution with cost 102.45
+/planner_3 found solution with cost 112.24
+/planner_1 found solution with cost 68.78
+/controller_1 v 0.511 w 0.054 e_rho -0.012 e_phi -1.038 angle(v) 67.0
+/controller_3 v 0.506 w 0.034 e_rho 0.013 e_phi -0.792 angle(v) -149.0
+/controller_0 v 0.629 w 0.114 e_rho -0.09 e_phi 0.311 angle(v) 1.0
+/controller_2 v 0.544 w 0.083 e_rho -0.087 e_phi -0.748 angle(v) 150.0
+/controller_4 v 0.602 w 0.088 e_rho -0.053 e_phi -0.318 angle(v) -73.0
+/planner_0 won consensus of iteration # 225.0 with cost 74.6171370644
+
+/planner_3 found solution with cost 79.1
+/planner_1 found solution with cost 99.86
+/planner_2 found solution with cost 106.53
+/planner_0 won consensus of iteration # 226.0 with cost 74.6171370644
+
+/planner_2 found solution with cost 90.45
+/planner_1 found solution with cost 94.41
+/controller_0 v 0.603 w 0.06 e_rho -0.054 e_phi 0.008 angle(v) 36.0
+/controller_3 v 0.507 w 0.061 e_rho -0.006 e_phi -1.069 angle(v) -109.0
+/controller_2 v 0.564 w 0.054 e_rho -0.073 e_phi -0.349 angle(v) -174.0
+/controller_4 v 0.662 w 0.098 e_rho -0.085 e_phi 0.417 angle(v) -33.0
+/controller_1 v 0.558 w 0.058 e_rho -0.068 e_phi -0.803 angle(v) 113.0
+/planner_3 found solution with cost 118.45
+/planner_0 won consensus of iteration # 227.0 with cost 74.6171370644
+
+/planner_1 found solution with cost 90.45
+/planner_2 found solution with cost 104.12
+/planner_3 found solution with cost 136.12
+	/planner_1 I'm ok with the prior map now!
+/planner_0 won consensus of iteration # 228.0 with cost 74.6171370644
+
+/planner_2 found solution with cost 106.45
+/controller_2 v 0.55 w 0.112 e_rho 0.02 e_phi -0.229 angle(v) -149.0
+/controller_1 v 0.542 w 0.07 e_rho -0.105 e_phi -0.851 angle(v) 154.0
+/planner_3 found solution with cost 112.8
+/controller_0 v 0.667 w 0.087 e_rho -0.03 e_phi 0.428 angle(v) 70.0
+/controller_3 v 0.556 w 0.054 e_rho -0.015 e_phi -0.653 angle(v) -72.0
+/controller_4 v 0.53 w 0.004 e_rho -0.046 e_phi -0.61 angle(v) 2.0
+/planner_0 won consensus of iteration # 229.0 with cost 74.6171370644
+
+/planner_2 found solution with cost 95.12
+/planner_3 found solution with cost 96.12
+	/planner_2 I'm ok with the prior map now!
+/planner_0 won consensus of iteration # 230.0 with cost 62.6171370644
+
+/controller_3 v 0.468 w 0.082 e_rho -0.06 e_phi -1.357 angle(v) -28.0
+/controller_1 v 0.427 w 0.048 e_rho -0.062 e_phi -1.694 angle(v) -172.0
+/controller_2 v 0.629 w 0.05 e_rho -0.014 e_phi 0.064 angle(v) -108.0
+/controller_4 v 0.564 w 0.061 e_rho -0.021 e_phi -0.273 angle(v) 34.0
+/controller_0 v 0.859 w 0.087 e_rho -0.068 e_phi 2.0 angle(v) 106.0
+/planner_3 found solution with cost 106.62
+/planner_0 won consensus of iteration # 231.0 with cost 60.6171370644
+
+/planner_3 found solution with cost 117.76
+/planner_0 won consensus of iteration # 232.0 with cost 70.6171370644
+
+/controller_0 v 0.429 w 0.234 e_rho 0.47 e_phi -4.092 angle(v) 81.0
+/controller_3 v 0.976 w 0.064 e_rho -0.299 e_phi 2.483 angle(v) 6.0
+/controller_2 v 1.321 w -0.066 e_rho -0.736 e_phi 1.72 angle(v) -40.0
+/controller_4 v 0.962 w 0.164 e_rho 0.281 e_phi 4.443 angle(v) 45.0
+/controller_1 v 0.194 w 0.229 e_rho -0.299 e_phi -5.67 angle(v) -46.0
+/planner_3 found solution with cost 119.95
+/planner_0 won consensus of iteration # 233.0 with cost 58.6171370644
+
+/planner_3 found solution with cost 92.97
+/planner_0 won consensus of iteration # 234.0 with cost 68.6171370644
+
+/planner_3 found solution with cost 98.73
+/controller_3 v 1.278 w -0.492 e_rho 0.07 e_phi 7.913 angle(v) 4.0
+/controller_1 v 0.737 w 0.557 e_rho -0.499 e_phi 0.281 angle(v) -79.0
+/controller_0 v -0.084 w -0.442 e_rho 0.358 e_phi -9.246 angle(v) 66.0
+/controller_2 v 1.325 w -0.383 e_rho -0.859 e_phi 1.603 angle(v) -17.0
+/controller_4 v 0.299 w -0.497 e_rho 0.458 e_phi -1.291 angle(v) 50.0
+/planner_0 won consensus of iteration # 235.0 with cost 68.6171370644
+
+/planner_3 found solution with cost 75.62
+	/planner_4 the prior map is bad!
+/planner_0 won consensus of iteration # 236.0 with cost 68.6171370644
+
+/planner_4 found solution with cost 91.62
+/planner_3 found solution with cost 97.63
+/controller_3 v 0.4 w 0.038 e_rho -0.026 e_phi -2.004 angle(v) 63.0
+/controller_0 v 0.62 w 0.058 e_rho 0.014 e_phi 0.194 angle(v) -157.0
+/controller_1 v 0.283 w 0.049 e_rho -0.041 e_phi -3.163 angle(v) -75.0
+/controller_2 v 1.152 w 0.112 e_rho -0.162 e_phi 4.477 angle(v) -13.0
+/controller_4 v 0.51 w 0.047 e_rho 0.012 e_phi -0.837 angle(v) 131.0
+/planner_0 won consensus of iteration # 237.0 with cost 68.6171370644
+
+/planner_4 found solution with cost 71.62
+/planner_3 found solution with cost 98.12
+/planner_0 won consensus of iteration # 238.0 with cost 68.6171370644
+
+/planner_4 found solution with cost 84.43
+/controller_2 v 0.805 w 0.005 e_rho -0.001 e_phi 1.931 angle(v) 18.0
+/controller_1 v 0.397 w 0.07 e_rho -0.065 e_phi -2.134 angle(v) -39.0
+/controller_0 v 0.633 w 0.052 e_rho -0.065 e_phi 0.172 angle(v) -115.0
+/controller_4 v 0.553 w 0.057 e_rho -0.043 e_phi -0.667 angle(v) 173.0
+/controller_3 v 0.429 w 0.043 e_rho -0.025 e_phi -1.674 angle(v) 99.0
+/planner_3 found solution with cost 99.38
+/planner_0 won consensus of iteration # 239.0 with cost 68.6171370644
+
+/planner_3 found solution with cost 87.62
+/planner_4 found solution with cost 92.85
+	/planner_3 I'm ok with the prior map now!
+/planner_0 won consensus of iteration # 240.0 with cost 68.6171370644
+
+/controller_0 v 0.646 w 0.125 e_rho -0.057 e_phi 0.485 angle(v) -83.0
+/controller_4 v 0.592 w 0.053 e_rho -0.057 e_phi -0.319 angle(v) -152.0
+/controller_3 v 0.394 w 0.032 e_rho 0.019 e_phi -2.006 angle(v) 128.0
+/controller_2 v 0.865 w -0.127 e_rho 0.009 e_phi 2.824 angle(v) 52.0
+/controller_1 v 0.377 w 0.052 e_rho -0.041 e_phi -2.346 angle(v) -9.0
+/planner_4 found solution with cost 98.69
+/planner_0 won consensus of iteration # 241.0 with cost 68.6171370644
+
+/planner_4 found solution with cost 71.62
+/planner_0 won consensus of iteration # 242.0 with cost 68.6171370644
+
+/controller_1 v 0.613 w 0.069 e_rho -0.075 e_phi -0.176 angle(v) 29.0
+/controller_0 v 0.522 w 0.049 e_rho -0.025 e_phi -0.813 angle(v) -45.0
+/controller_3 v 0.537 w 0.009 e_rho -0.019 e_phi -0.765 angle(v) 169.0
+/controller_2 v 0.604 w 0.048 e_rho -0.012 e_phi 0.132 angle(v) 93.0
+/controller_4 v 0.597 w 0.06 e_rho -0.063 e_phi -0.162 angle(v) -115.0
+/planner_4 found solution with cost 103.84
+/planner_0 won consensus of iteration # 243.0 with cost 68.6171370644
+
+/planner_4 found solution with cost 86.01
+/planner_0 won consensus of iteration # 244.0 with cost 68.6171370644
+
+/planner_4 found solution with cost 64.28
+/controller_1 v 0.428 w 0.024 e_rho -0.066 e_phi -1.873 angle(v) 64.0
+/controller_0 v 0.434 w 0.046 e_rho -0.014 e_phi -1.736 angle(v) -9.0
+/controller_2 v 1.031 w 0.045 e_rho -0.005 e_phi 4.415 angle(v) 118.0
+/controller_4 v 0.41 w 0.048 e_rho -0.037 e_phi -1.89 angle(v) -78.0
+/controller_3 v 0.565 w 0.008 e_rho -0.029 e_phi -0.511 angle(v) -157.0
+/planner_4 won consensus of iteration # 245.0 with cost 64.2838048437
+
+/planner_4 won consensus of iteration # 246.0 with cost 62.2838048437
+
+/controller_2 v 0.749 w 0.069 e_rho -0.011 e_phi 1.188 angle(v) 162.0
+/controller_1 v 0.165 w -0.018 e_rho 0.02 e_phi -4.169 angle(v) 84.0
+/controller_0 v 0.897 w -0.179 e_rho 0.213 e_phi 3.213 angle(v) -4.0
+/controller_3 v 0.496 w 0.168 e_rho -0.276 e_phi -2.081 angle(v) -92.0
+/controller_4 v 0.668 w 0.094 e_rho -0.134 e_phi 0.319 angle(v) -47.0
+/planner_4 won consensus of iteration # 247.0 with cost 60.2838048437
+
+/planner_4 won consensus of iteration # 248.0 with cost 70.2838048437
+
+/controller_4 v 0.997 w 0.01 e_rho -0.283 e_phi 2.183 angle(v) -12.0
+/controller_1 v 0.558 w 0.068 e_rho 0.496 e_phi -2.49 angle(v) 64.0
+/controller_3 v 0.6 w -0.071 e_rho -0.338 e_phi -1.488 angle(v) -54.0
+/controller_0 v 1.0 w 0.324 e_rho 0.061 e_phi 4.764 angle(v) 38.0
+/controller_2 v 0.288 w 0.176 e_rho -0.15 e_phi -3.281 angle(v) -127.0
+/planner_4 won consensus of iteration # 249.0 with cost 70.2838048437
+
+/planner_4 won consensus of iteration # 250.0 with cost 70.2838048437
+
+/controller_4 v 0.621 w 0.067 e_rho -0.05 e_phi -0.218 angle(v) 20.0
+/controller_1 v 0.534 w 0.089 e_rho -0.051 e_phi -0.96 angle(v) 164.0
+/controller_2 v 0.729 w 0.049 e_rho -0.096 e_phi 0.975 angle(v) -123.0
+/controller_3 v 0.463 w 0.048 e_rho 0.034 e_phi -1.158 angle(v) -61.0
+/controller_0 v 0.606 w -0.027 e_rho -0.032 e_phi 0.325 angle(v) 89.0
+/planner_4 won consensus of iteration # 251.0 with cost 70.2838048437
+
+/planner_4 won consensus of iteration # 252.0 with cost 70.2838048437
+
+/controller_1 v 0.639 w 0.037 e_rho -0.025 e_phi -0.026 angle(v) -168.0
+/controller_3 v 0.568 w 0.084 e_rho 0.025 e_phi -0.381 angle(v) -30.0
+/controller_0 v 0.386 w 0.039 e_rho -0.006 e_phi -2.019 angle(v) 123.0
+/controller_2 v 0.719 w 0.205 e_rho -0.095 e_phi 1.462 angle(v) -95.0
+/controller_4 v 0.515 w 0.116 e_rho -0.113 e_phi -1.076 angle(v) 62.0
+/planner_4 won consensus of iteration # 253.0 with cost 70.2838048437
+
+/planner_4 won consensus of iteration # 254.0 with cost 58.2838048437
+
+/controller_3 v 0.186 w -0.065 e_rho 0.078 e_phi -4.219 angle(v) -11.0
+/controller_0 v 0.337 w 0.048 e_rho -0.007 e_phi -2.746 angle(v) 159.0
+/controller_4 v 0.597 w 0.065 e_rho -0.082 e_phi 0.049 angle(v) 92.0
+/controller_1 v 0.485 w 0.047 e_rho -0.104 e_phi -1.479 angle(v) -124.0
+/controller_2 v 1.156 w 0.058 e_rho 0.004 e_phi 6.242 angle(v) -75.0
+/planner_4 won consensus of iteration # 255.0 with cost 68.2838048437
+
+/planner_4 won consensus of iteration # 256.0 with cost 56.2838048437
+
+/controller_1 v 0.469 w -0.146 e_rho -0.116 e_phi -1.728 angle(v) -83.0
+/controller_0 v 0.606 w 0.034 e_rho -0.142 e_phi -0.192 angle(v) -156.0
+/controller_3 v 0.771 w 0.037 e_rho 0.002 e_phi 1.838 angle(v) 39.0
+/controller_2 v 0.695 w -0.107 e_rho -0.153 e_phi 0.548 angle(v) -17.0
+/controller_4 v 0.504 w 0.079 e_rho 0.164 e_phi -0.908 angle(v) 98.0
+/planner_4 won consensus of iteration # 257.0 with cost 66.2838048437
+
+/planner_4 won consensus of iteration # 258.0 with cost 66.2838048437
+
+/controller_1 v 0.698 w -0.15 e_rho -0.204 e_phi -0.402 angle(v) -50.0
+/controller_2 v 1.003 w 0.213 e_rho -0.189 e_phi 4.659 angle(v) 3.0
+/controller_0 v 0.327 w -0.112 e_rho -0.092 e_phi -2.792 angle(v) -117.0
+/controller_3 v 0.529 w 0.38 e_rho 0.268 e_phi -0.134 angle(v) 47.0
+/controller_4 v 0.152 w 0.078 e_rho -0.05 e_phi -4.201 angle(v) 176.0
+/planner_4 won consensus of iteration # 259.0 with cost 66.2838048437
+
+/planner_4 won consensus of iteration # 260.0 with cost 66.2838048437
+
+/controller_4 v 0.423 w -0.084 e_rho 0.011 e_phi -0.881 angle(v) -178.0
+/controller_1 v 0.33 w 0.061 e_rho -0.164 e_phi -3.114 angle(v) -3.0
+/controller_2 v 0.797 w -0.044 e_rho 0.082 e_phi 3.129 angle(v) 24.0
+/controller_0 v 0.643 w -0.007 e_rho 0.174 e_phi -0.184 angle(v) -122.0
+/controller_3 v 0.486 w -0.25 e_rho 0.014 e_phi -1.113 angle(v) 109.0
+/planner_4 won consensus of iteration # 261.0 with cost 66.2838048437
+
+/planner_4 won consensus of iteration # 262.0 with cost 66.2838048437
+
+/controller_1 v 0.302 w 0.036 e_rho -0.069 e_phi -2.64 angle(v) 16.0
+/controller_4 v 0.462 w 0.009 e_rho 0.084 e_phi -1.013 angle(v) -152.0
+/controller_0 v 0.714 w 0.114 e_rho -0.124 e_phi 0.019 angle(v) -58.0
+/controller_3 v 0.437 w 0.066 e_rho -0.201 e_phi -2.153 angle(v) 176.0
+/controller_2 v 1.024 w -0.032 e_rho 0.185 e_phi 3.883 angle(v) 55.0
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 263.0 with cost 66.2838048437
+
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 264.0 with cost 66.2838048437
+
+/controller_2 v 0.721 w 0.038 e_rho -0.017 e_phi 0.255 angle(v) 108.0
+/controller_1 v 0.461 w 0.022 e_rho 0.058 e_phi -0.958 angle(v) 28.0
+/controller_3 v 0.419 w 0.054 e_rho 0.145 e_phi -0.875 angle(v) 160.0
+/controller_0 v 0.53 w 0.068 e_rho -0.204 e_phi -1.241 angle(v) -11.0
+/controller_4 v 0.644 w 0.065 e_rho 0.106 e_phi -0.077 angle(v) -120.0
+/planner_4 won consensus of iteration # 265.0 with cost 66.2838048437
+
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 266.0 with cost 66.2838048437
+
+/controller_3 v 0.46 w 0.013 e_rho 0.044 e_phi -0.894 angle(v) -154.0
+/controller_0 v 0.424 w 0.012 e_rho -0.081 e_phi -1.302 angle(v) 9.0
+/controller_4 v 0.76 w 0.105 e_rho -0.076 e_phi 0.42 angle(v) -69.0
+/controller_2 v 0.704 w 0.035 e_rho -0.171 e_phi 0.572 angle(v) 156.0
+/controller_1 v 0.633 w 0.045 e_rho 0.107 e_phi -0.135 angle(v) 58.0
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 267.0 with cost 66.2838048437
+
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 268.0 with cost 66.2838048437
+
+/controller_4 v 0.332 w 0.022 e_rho -0.124 e_phi -2.992 angle(v) -17.0
+/controller_0 v 0.545 w 0.007 e_rho 0.073 e_phi 0.219 angle(v) 20.0
+/controller_3 v 0.57 w -0.021 e_rho 0.152 e_phi -0.693 angle(v) -130.0
+/controller_2 v 0.6 w -0.072 e_rho -0.14 e_phi 0.379 angle(v) -174.0
+/controller_1 v 0.677 w 0.077 e_rho -0.1 e_phi -0.438 angle(v) 111.0
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 269.0 with cost 66.2838048437
+
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 270.0 with cost 66.2838048437
+
+/controller_0 v 0.638 w -0.015 e_rho 0.198 e_phi 0.181 angle(v) 41.0
+/controller_2 v 0.669 w 0.137 e_rho -0.038 e_phi 1.654 angle(v) -157.0
+/controller_1 v 0.551 w -0.099 e_rho -0.165 e_phi -1.075 angle(v) 151.0
+/controller_4 v 0.336 w 0.046 e_rho -0.099 e_phi -2.4 angle(v) 9.0
+/controller_3 v 0.643 w 0.129 e_rho -0.009 e_phi -0.444 angle(v) -83.0
+/planner_4 won consensus of iteration # 271.0 with cost 66.2838048437
+
+/planner_4 won consensus of iteration # 272.0 with cost 66.2838048437
+
+/controller_3 v 0.398 w 0.01 e_rho -0.126 e_phi -2.455 angle(v) -28.0
+/controller_2 v 0.967 w 0.049 e_rho 0.167 e_phi 4.329 angle(v) -142.0
+/controller_1 v 0.462 w 0.012 e_rho -0.153 e_phi -1.378 angle(v) -175.0
+/controller_4 v 0.405 w 0.017 e_rho 0.026 e_phi -1.385 angle(v) 21.0
+/controller_0 v 0.641 w 0.105 e_rho -0.012 e_phi -0.504 angle(v) 98.0
+/planner_4 won consensus of iteration # 273.0 with cost 66.2838048437
+
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 274.0 with cost 54.2838048437
+
+/controller_1 v 0.391 w 0.026 e_rho 0.006 e_phi -1.514 angle(v) -160.0
+/controller_0 v 0.748 w 0.171 e_rho -0.232 e_phi 0.417 angle(v) 148.0
+/controller_3 v 0.408 w 0.035 e_rho -0.08 e_phi -1.546 angle(v) -2.0
+/controller_2 v 0.835 w -0.034 e_rho 0.158 e_phi 1.437 angle(v) -100.0
+/controller_4 v 0.623 w 0.085 e_rho 0.094 e_phi 0.236 angle(v) 46.0
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 275.0 with cost 64.2838048437
+
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 276.0 with cost 52.2838048437
+
+/controller_2 v 1.632 w -0.066 e_rho -0.338 e_phi 6.499 angle(v) -51.0
+/controller_1 v 0.201 w -0.072 e_rho -0.025 e_phi -4.046 angle(v) -115.0
+/controller_3 v 0.452 w 0.003 e_rho -0.01 e_phi -0.616 angle(v) 16.0
+/controller_0 v 0.41 w -0.182 e_rho -0.177 e_phi -1.505 angle(v) -165.0
+/controller_4 v 0.534 w -0.022 e_rho 0.201 e_phi -1.534 angle(v) 74.0
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 277.0 with cost 62.2838048437
+
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_1 the prior map is bad!
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 278.0 with cost 62.2838048437
+
+/controller_1 v 0.601 w 0.002 e_rho -0.095 e_phi -1.167 angle(v) -81.0
+/controller_3 v 0.687 w 0.049 e_rho 0.187 e_phi 1.366 angle(v) 29.0
+/controller_2 v 0.723 w 0.217 e_rho -0.265 e_phi 0.884 angle(v) -3.0
+/controller_4 v 0.475 w 0.169 e_rho 0.063 e_phi -0.996 angle(v) 119.0
+/controller_0 v 0.318 w -0.097 e_rho -0.039 e_phi -2.302 angle(v) -153.0
+/planner_1 found solution with cost 86.34
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 279.0 with cost 62.2838048437
+
+/planner_1 found solution with cost 89.94
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_2 the prior map is bad!
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 280.0 with cost 62.2838048437
+
+/controller_4 v 0.552 w 0.068 e_rho -0.174 e_phi -0.482 angle(v) -178.0
+/controller_1 v 0.334 w 0.04 e_rho -0.186 e_phi -3.578 angle(v) -21.0
+/controller_0 v 0.56 w 0.026 e_rho 0.122 e_phi -0.378 angle(v) -140.0
+/controller_3 v 0.184 w -0.021 e_rho 0.085 e_phi -4.556 angle(v) 63.0
+/controller_2 v 1.282 w -0.109 e_rho -0.079 e_phi 8.495 angle(v) 4.0
+/planner_1 found solution with cost 72.37
+/planner_2 found solution with cost 61.22
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_2 won consensus of iteration # 281.0 with cost 61.2170311971
+
+/planner_4 found solution with cost 56.12
+/planner_1 found solution with cost 86.69
+/planner_4 won consensus of iteration # 282.0 with cost 56.1171407736
+
+/planner_2 found solution with cost 62.12
+/controller_1 v 0.54 w -0.115 e_rho -0.025 e_phi -0.223 angle(v) -26.0
+/controller_0 v 0.667 w 0.063 e_rho -0.135 e_phi -0.558 angle(v) -86.0
+/controller_3 v 0.365 w 0.035 e_rho -0.083 e_phi -2.666 angle(v) 134.0
+/controller_2 v 0.782 w -0.128 e_rho 0.317 e_phi 2.933 angle(v) 12.0
+/controller_4 v 0.396 w 0.014 e_rho -0.059 e_phi -1.704 angle(v) -156.0
+/planner_1 found solution with cost 69.25
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 283.0 with cost 54.1171407736
+
+/planner_1 found solution with cost 52.12
+/planner_2 found solution with cost 52.12
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_2 won consensus of iteration # 284.0 with cost 52.1171365342
+
+/planner_1 found solution with cost 62.12
+/planner_4 found solution with cost 50.12
+/controller_0 v 0.679 w 0.197 e_rho -0.281 e_phi -0.685 angle(v) -37.0
+/controller_3 v 0.443 w 0.028 e_rho 0.001 e_phi -1.05 angle(v) 156.0
+/controller_1 v 0.751 w 0.054 e_rho -0.233 e_phi 1.174 angle(v) 22.0
+/controller_2 v 0.79 w 0.108 e_rho 0.311 e_phi 1.443 angle(v) 51.0
+/controller_4 v 0.34 w 0.025 e_rho 0.062 e_phi -2.516 angle(v) -140.0
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 285.0 with cost 50.1171357249
+
+/planner_1 found solution with cost 48.12
+/planner_2 found solution with cost 82.59
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_4 I'm ok with the prior map now!
+/planner_1 won consensus of iteration # 286.0 with cost 60.1171308569
+
+/planner_2 found solution with cost 54.78
+/controller_1 v 0.6 w -0.024 e_rho 0.256 e_phi 0.475 angle(v) 12.0
+/controller_4 v 0.676 w 0.051 e_rho -0.101 e_phi -0.28 angle(v) -94.0
+/controller_3 v 0.427 w 0.042 e_rho -0.083 e_phi -1.43 angle(v) -161.0
+/controller_0 v 0.578 w -0.04 e_rho -0.098 e_phi -0.199 angle(v) -21.0
+/controller_2 v 0.579 w 0.068 e_rho 0.032 e_phi -0.528 angle(v) 112.0
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_2 won consensus of iteration # 287.0 with cost 54.7837975322
+
+/planner_1 found solution with cost 93.66
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_2 won consensus of iteration # 288.0 with cost 52.7837975322
+
+/controller_0 v 0.399 w 0.13 e_rho -0.202 e_phi -2.083 angle(v) 38.0
+/controller_3 v 0.595 w 0.02 e_rho 0.22 e_phi 0.557 angle(v) -167.0
+/controller_4 v 0.445 w 0.096 e_rho -0.043 e_phi -1.857 angle(v) -57.0
+/controller_1 v 0.747 w 0.092 e_rho -0.104 e_phi 0.223 angle(v) 81.0
+/controller_2 v 0.819 w 0.131 e_rho -0.189 e_phi 1.716 angle(v) 157.0
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_2 won consensus of iteration # 289.0 with cost 50.7837975322
+
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_3 the prior map is bad!
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_2 won consensus of iteration # 290.0 with cost 48.7837975322
+
+/planner_3 found solution with cost 49.61
+/controller_0 v 0.399 w -0.172 e_rho 0.298 e_phi -2.281 angle(v) -9.0
+/controller_1 v 0.736 w 0.182 e_rho -0.078 e_phi 0.471 angle(v) 112.0
+/controller_3 v 0.934 w 0.13 e_rho -0.112 e_phi 2.211 angle(v) -110.0
+/controller_2 v 0.636 w 0.167 e_rho -0.344 e_phi -0.489 angle(v) -152.0
+/controller_4 v 0.533 w -0.051 e_rho -0.029 e_phi -0.52 angle(v) -33.0
+/planner_1 found solution with cost 98.78
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_2 won consensus of iteration # 291.0 with cost 46.7837975322
+
+/planner_3 found solution with cost 84.78
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_2 won consensus of iteration # 292.0 with cost 56.7837975322
+
+/planner_3 found solution with cost 49.35
+/controller_0 v 0.69 w 0.166 e_rho 0.46 e_phi 1.136 angle(v) 23.0
+/controller_3 v 0.941 w -0.064 e_rho -0.45 e_phi 0.868 angle(v) -55.0
+/controller_4 v 0.826 w 0.035 e_rho 0.08 e_phi 2.435 angle(v) -20.0
+/controller_2 v 0.774 w -0.061 e_rho -0.332 e_phi -0.031 angle(v) -123.0
+/controller_1 v 0.14 w -0.095 e_rho 0.139 e_phi -4.988 angle(v) 92.0
+/planner_1 found solution with cost 101.12
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_2 won consensus of iteration # 293.0 with cost 56.7837975322
+
+/planner_1 found solution with cost 111.45
+/planner_3 found solution with cost 65.21
+/planner_2 won consensus of iteration # 294.0 with cost 56.7837975322
+
+/planner_3 found solution with cost 61.2
+/controller_0 v 0.595 w 0.091 e_rho -0.051 e_phi -0.053 angle(v) 105.0
+/controller_1 v 0.325 w 0.035 e_rho -0.067 e_phi -2.952 angle(v) -176.0
+/controller_3 v 0.325 w 0.065 e_rho -0.056 e_phi -2.82 angle(v) -34.0
+/controller_2 v 1.193 w -0.093 e_rho -0.05 e_phi 5.726 angle(v) -124.0
+/controller_4 v 0.574 w 0.095 e_rho -0.059 e_phi -0.427 angle(v) 34.0
+/planner_1 found solution with cost 93.43
+/planner_2 won consensus of iteration # 295.0 with cost 56.7837975322
+
+/planner_3 found solution with cost 61.71
+/planner_1 found solution with cost 291.04
+/planner_2 won consensus of iteration # 296.0 with cost 56.7837975322
+
+/controller_0 v 0.832 w -0.058 e_rho -0.041 e_phi 2.212 angle(v) 129.0
+/controller_1 v 0.52 w 0.057 e_rho -0.051 e_phi -0.985 angle(v) -152.0
+/controller_4 v 0.455 w 0.048 e_rho -0.06 e_phi -1.556 angle(v) 67.0
+/controller_2 v 0.613 w 0.051 e_rho -0.011 e_phi 0.233 angle(v) -85.0
+/controller_3 v 0.516 w 0.048 e_rho 0.013 e_phi -0.866 angle(v) -15.0
+/planner_3 found solution with cost 83.07
+/planner_2 won consensus of iteration # 297.0 with cost 56.7837975322
+
+/planner_3 found solution with cost 57.9
+/planner_1 found solution with cost 91.45
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_2 won consensus of iteration # 298.0 with cost 56.7837975322
+
+/controller_1 v 0.438 w 0.104 e_rho -0.077 e_phi -1.686 angle(v) -109.0
+/controller_3 v 0.51 w 0.053 e_rho -0.02 e_phi -0.989 angle(v) 26.0
+/controller_0 v 0.714 w 0.086 e_rho -0.061 e_phi 0.851 angle(v) 170.0
+/controller_2 v 0.589 w 0.084 e_rho -0.001 e_phi -0.039 angle(v) -49.0
+/controller_4 v 0.641 w 0.03 e_rho -0.068 e_phi 0.281 angle(v) 99.0
+/planner_3 found solution with cost 85.78
+/planner_1 found solution with cost 77.78
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_2 won consensus of iteration # 299.0 with cost 56.7837975322
+
+/planner_1 found solution with cost 87.45
+/planner_2 won consensus of iteration # 300.0 with cost 56.7837975322
+
+/controller_1 v 0.564 w 0.057 e_rho -0.049 e_phi -0.391 angle(v) -78.0
+/controller_0 v 0.554 w -0.017 e_rho 0.003 e_phi -0.503 angle(v) -154.0
+/controller_3 v 0.476 w 0.081 e_rho -0.051 e_phi -1.27 angle(v) 69.0
+/controller_2 v 0.565 w 0.055 e_rho 0.02 e_phi -0.362 angle(v) -12.0
+/controller_4 v 0.701 w 0.122 e_rho -0.033 e_phi 1.013 angle(v) 134.0
+/planner_1 found solution with cost 87.45
+/planner_3 found solution with cost 83.45
+/planner_2 won consensus of iteration # 301.0 with cost 56.7837975322
+
+/planner_1 found solution with cost 95.45
+/planner_3 found solution with cost 91.2
+/planner_2 won consensus of iteration # 302.0 with cost 56.7837975322
+
+/controller_2 v 0.544 w 0.037 e_rho 0.008 e_phi -0.575 angle(v) 28.0
+/controller_4 v 0.482 w 0.004 e_rho -0.029 e_phi -1.34 angle(v) 175.0
+/controller_3 v 0.572 w 0.074 e_rho -0.005 e_phi -0.146 angle(v) 101.0
+/controller_1 v 0.499 w 0.006 e_rho -0.043 e_phi -1.132 angle(v) -39.0
+/controller_0 v 0.792 w -0.041 e_rho -0.016 e_phi 1.945 angle(v) -118.0
+/planner_3 found solution with cost 83.45
+/planner_1 found solution with cost 85.97
+/planner_2 obstacle detected, deleting RRT
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_3 won consensus of iteration # 303.0 with cost 83.4504673778
+
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_3 won consensus of iteration # 304.0 with cost 81.4504673778
+
+/controller_3 v 0.718 w 0.016 e_rho -0.019 e_phi 1.062 angle(v) 131.0
+/controller_2 v 0.638 w 0.088 e_rho -0.197 e_phi -0.402 angle(v) 81.0
+/controller_4 v 0.759 w -0.044 e_rho 0.129 e_phi 1.818 angle(v) -169.0
+/controller_0 v 0.431 w -0.014 e_rho 0.112 e_phi -1.434 angle(v) -96.0
+/controller_1 v 0.51 w 0.148 e_rho -0.151 e_phi -1.308 angle(v) 10.0
+/planner_1 found solution with cost 79.45
+/planner_2 found solution with cost 99.45
+	/planner_0 the prior map is bad!
+/planner_3 won consensus of iteration # 305.0 with cost 79.4504673778
+
+/planner_1 found solution with cost 76.72
+/planner_0 found solution with cost 78.45
+/planner_2 found solution with cost 127.93
+/planner_1 won consensus of iteration # 306.0 with cost 76.7179552775
+
+/planner_0 found solution with cost 85.12
+/planner_2 found solution with cost 89.12
+/controller_0 v 0.722 w 0.162 e_rho -0.297 e_phi -0.138 angle(v) -19.0
+/controller_1 v 0.695 w -0.004 e_rho -0.217 e_phi 0.232 angle(v) 42.0
+/controller_4 v 0.392 w 0.117 e_rho 0.067 e_phi -1.994 angle(v) -121.0
+/controller_3 v 0.396 w 0.067 e_rho 0.064 e_phi -1.444 angle(v) 165.0
+/controller_2 v 0.844 w 0.031 e_rho 0.172 e_phi 2.163 angle(v) 82.0
+/planner_3 found solution with cost 119.67
+/planner_0 won consensus of iteration # 307.0 with cost 85.1171333553
+
+/planner_1 found solution with cost 75.12
+/planner_2 found solution with cost 86.33
+/planner_3 found solution with cost 79.12
+/planner_2 won consensus of iteration # 308.0 with cost 86.3305168232
+
+/planner_1 found solution with cost 73.17
+/planner_0 found solution with cost 74.78
+/planner_3 found solution with cost 72.82
+/controller_0 v 1.219 w 0.001 e_rho -0.408 e_phi 4.283 angle(v) 1.0
+/controller_3 v 0.123 w 0.25 e_rho -0.134 e_phi -3.538 angle(v) -110.0
+/controller_2 v 0.344 w 0.039 e_rho 0.172 e_phi -2.352 angle(v) 114.0
+/controller_4 v 0.805 w 0.025 e_rho -0.423 e_phi -0.994 angle(v) -43.0
+/controller_1 v 0.816 w -0.042 e_rho 0.327 e_phi 2.252 angle(v) 31.0
+/planner_3 won consensus of iteration # 309.0 with cost 84.8183685719
+
+/planner_0 found solution with cost 85.38
+/planner_1 found solution with cost 80.36
+/planner_2 found solution with cost 81.11
+/planner_1 won consensus of iteration # 310.0 with cost 80.3553667356
+
+/planner_0 found solution with cost 72.45
+/planner_3 found solution with cost 84.45
+/controller_1 v 0.619 w 0.106 e_rho -0.048 e_phi -0.581 angle(v) 103.0
+/controller_0 v 0.725 w 0.081 e_rho -0.065 e_phi 1.698 angle(v) 30.0
+/controller_2 v 0.527 w 0.1 e_rho -0.0 e_phi 0.115 angle(v) 174.0
+/controller_3 v 0.41 w -0.024 e_rho 0.093 e_phi -2.211 angle(v) -125.0
+/controller_4 v 0.611 w 0.031 e_rho -0.204 e_phi -0.685 angle(v) -22.0
+/planner_2 found solution with cost 92.67
+/planner_1 won consensus of iteration # 311.0 with cost 78.3553667356
+
+/planner_3 found solution with cost 102.45
+/planner_2 found solution with cost 70.45
+/planner_0 found solution with cost 94.45
+/planner_1 won consensus of iteration # 312.0 with cost 76.3553667356
+
+/planner_2 found solution with cost 70.12
+/controller_1 v 0.203 w -0.067 e_rho 0.075 e_phi -3.795 angle(v) 121.0
+/controller_0 v 0.909 w -0.141 e_rho 0.434 e_phi 3.857 angle(v) 25.0
+/controller_3 v 0.872 w -0.351 e_rho -0.188 e_phi 1.942 angle(v) -72.0
+/controller_2 v 0.2 w 0.131 e_rho -0.153 e_phi -4.2 angle(v) -100.0
+/controller_4 v 1.029 w 0.106 e_rho -0.094 e_phi 4.153 angle(v) -15.0
+/planner_3 found solution with cost 86.12
+/planner_2 won consensus of iteration # 313.0 with cost 82.1171304148
+
+/planner_3 found solution with cost 67.45
+/planner_1 found solution with cost 69.78
+/planner_0 found solution with cost 71.45
+/planner_1 won consensus of iteration # 314.0 with cost 69.7837970554
+
+/planner_3 found solution with cost 69.82
+/controller_1 v 0.589 w 0.138 e_rho -0.062 e_phi 0.404 angle(v) 178.0
+/controller_3 v 0.607 w 0.027 e_rho -0.137 e_phi -0.394 angle(v) -28.0
+/controller_4 v 0.684 w 0.063 e_rho -0.051 e_phi 1.123 angle(v) 29.0
+/controller_2 v 0.38 w -0.008 e_rho 0.008 e_phi -2.444 angle(v) -112.0
+/controller_0 v 0.675 w 0.09 e_rho 0.093 e_phi 0.42 angle(v) 90.0
+/planner_2 found solution with cost 79.51
+/planner_0 found solution with cost 69.45
+/planner_1 won consensus of iteration # 315.0 with cost 67.7837970554
+
+/planner_3 found solution with cost 67.45
+/planner_0 found solution with cost 73.12
+/planner_2 found solution with cost 67.45
+/planner_0 won consensus of iteration # 316.0 with cost 73.1171315274
+
+/planner_3 found solution with cost 67.12
+/controller_1 v 0.13 w 0.087 e_rho 0.057 e_phi -4.328 angle(v) -159.0
+/controller_0 v 0.517 w -0.113 e_rho 0.297 e_phi -0.802 angle(v) 103.0
+/controller_3 v 0.904 w 0.022 e_rho -0.29 e_phi 1.632 angle(v) 6.0
+/controller_2 v 0.686 w 0.046 e_rho -0.419 e_phi -1.733 angle(v) -33.0
+/controller_4 v 0.966 w -0.04 e_rho 0.148 e_phi 4.002 angle(v) 45.0
+/planner_2 found solution with cost 80.79
+/planner_1 found solution with cost 79.77
+/planner_0 won consensus of iteration # 317.0 with cost 71.1171315274
+
+/planner_3 found solution with cost 69.12
+/planner_2 found solution with cost 63.45
+/planner_1 found solution with cost 66.78
+/planner_2 won consensus of iteration # 318.0 with cost 75.4504632713
+
+/planner_3 found solution with cost 68.12
+/planner_1 found solution with cost 66.45
+/controller_2 v 0.772 w 0.047 e_rho -0.266 e_phi 0.413 angle(v) -22.0
+/controller_0 v 0.408 w 0.104 e_rho 0.242 e_phi -2.066 angle(v) 145.0
+/controller_3 v 0.763 w 0.059 e_rho 0.029 e_phi 1.787 angle(v) 22.0
+/controller_4 v 0.651 w -0.009 e_rho 0.247 e_phi 0.846 angle(v) 77.0
+/controller_1 v 0.54 w -0.038 e_rho -0.321 e_phi -2.26 angle(v) -70.0
+/planner_0 found solution with cost 72.34
+/planner_0 won consensus of iteration # 319.0 with cost 72.3396673395
+
+/planner_3 found solution with cost 80.01
+/planner_1 found solution with cost 69.51
+/planner_2 found solution with cost 62.12
+/planner_2 won consensus of iteration # 320.0 with cost 74.1171269975
+
+/controller_2 v 0.646 w 0.062 e_rho -0.052 e_phi 0.121 angle(v) 1.0
+/controller_0 v 0.923 w 0.136 e_rho -0.003 e_phi 3.176 angle(v) -151.0
+/controller_3 v 0.709 w 0.01 e_rho 0.009 e_phi 1.28 angle(v) 65.0
+/controller_1 v 0.439 w 0.323 e_rho -0.302 e_phi -1.968 angle(v) -37.0
+/controller_4 v 0.584 w 0.042 e_rho 0.104 e_phi 0.038 angle(v) 130.0
+/planner_3 found solution with cost 103.11
+/planner_0 found solution with cost 71.45
+/planner_1 found solution with cost 67.45
+/planner_0 won consensus of iteration # 321.0 with cost 71.4504603047
+
+/planner_1 found solution with cost 65.45
+/planner_2 found solution with cost 62.12
+/planner_3 found solution with cost 81.45
+/planner_2 won consensus of iteration # 322.0 with cost 74.1171299032
+
+/controller_0 v 0.645 w 0.066 e_rho -0.124 e_phi -0.044 angle(v) -97.0
+/controller_2 v 0.617 w 0.016 e_rho 0.057 e_phi 0.346 angle(v) 30.0
+/controller_1 v 0.539 w -0.11 e_rho 0.144 e_phi -0.251 angle(v) -50.0
+/controller_4 v 0.63 w 0.08 e_rho -0.183 e_phi -0.379 angle(v) -161.0
+/controller_3 v 0.45 w 0.065 e_rho 0.037 e_phi -1.417 angle(v) 107.0
+/planner_3 found solution with cost 66.45
+/planner_0 found solution with cost 74.45
+/planner_1 found solution with cost 68.03
+/planner_2 won consensus of iteration # 323.0 with cost 74.1171299032
+
+/planner_0 found solution with cost 68.12
+/planner_1 found solution with cost 70.87
+/planner_3 found solution with cost 65.44
+/planner_3 won consensus of iteration # 324.0 with cost 65.4378108714
+
+/planner_0 found solution with cost 68.37
+/controller_4 v 0.565 w 0.057 e_rho -0.029 e_phi -0.393 angle(v) -137.0
+/controller_3 v 0.464 w 0.068 e_rho 0.025 e_phi -1.219 angle(v) 148.0
+/controller_1 v 0.417 w 0.037 e_rho -0.013 e_phi -1.811 angle(v) 7.0
+/controller_0 v 0.791 w 0.147 e_rho -0.075 e_phi 1.662 angle(v) -66.0
+/controller_2 v 0.661 w 0.056 e_rho -0.08 e_phi 0.279 angle(v) 83.0
+/planner_2 found solution with cost 66.7
+/planner_1 found solution with cost 68.37
+/planner_3 won consensus of iteration # 325.0 with cost 63.4378108714
+
+/planner_2 found solution with cost 86.83
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_3 won consensus of iteration # 326.0 with cost 61.4378108714
+
+/planner_1 found solution with cost 59.44
+/planner_0 found solution with cost 72.08
+/controller_2 v 0.322 w 0.032 e_rho 0.179 e_phi -3.116 angle(v) 87.0
+/controller_1 v 0.766 w -0.031 e_rho 0.135 e_phi 2.543 angle(v) 22.0
+/controller_0 v 1.03 w 0.09 e_rho -0.339 e_phi 2.545 angle(v) -18.0
+/controller_3 v 0.386 w 0.477 e_rho -0.499 e_phi -2.737 angle(v) -110.0
+/controller_4 v 0.731 w 0.077 e_rho -0.228 e_phi -0.467 angle(v) -82.0
+/planner_2 found solution with cost 63.11
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_2 won consensus of iteration # 327.0 with cost 63.1079045052
+
+/planner_0 found solution with cost 58.36
+/planner_1 found solution with cost 66.11
+/planner_3 found solution with cost 59.77
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_0 won consensus of iteration # 328.0 with cost 70.3620030823
+
+/planner_3 found solution with cost 58.1
+/planner_2 found solution with cost 58.12
+/controller_1 v 0.911 w 0.038 e_rho 0.504 e_phi 2.452 angle(v) 31.0
+/controller_3 v 0.124 w 0.093 e_rho -0.132 e_phi -5.196 angle(v) -72.0
+/controller_2 v 0.085 w 0.339 e_rho 0.137 e_phi -1.899 angle(v) 132.0
+/controller_4 v 0.891 w 0.256 e_rho -0.408 e_phi 0.11 angle(v) -42.0
+/controller_0 v 0.931 w 0.043 e_rho -0.206 e_phi 3.811 angle(v) 3.0
+/planner_1 found solution with cost 68.82
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_3 won consensus of iteration # 329.0 with cost 70.1036238173
+
+/planner_1 found solution with cost 58.1
+/planner_0 found solution with cost 58.1
+/planner_2 found solution with cost 58.1
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_3 won consensus of iteration # 330.0 with cost 70.1036238173
+
+/planner_1 found solution with cost 58.1
+/controller_0 v 0.137 w -0.045 e_rho 0.112 e_phi -5.04 angle(v) -9.0
+/controller_3 v 0.541 w 0.096 e_rho 0.104 e_phi -1.189 angle(v) -120.0
+/controller_2 v 0.635 w 0.065 e_rho -0.11 e_phi 1.242 angle(v) -172.0
+/controller_4 v 0.914 w 0.066 e_rho -0.32 e_phi 1.951 angle(v) -14.0
+/controller_1 v 0.428 w 0.073 e_rho -0.156 e_phi -2.767 angle(v) 130.0
+/planner_2 found solution with cost 58.1
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_1 won consensus of iteration # 331.0 with cost 58.1036238173
+
+/planner_2 found solution with cost 56.1
+/planner_3 found solution with cost 59.44
+/planner_0 found solution with cost 56.1
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_1 won consensus of iteration # 332.0 with cost 56.1036238173
+
+/planner_3 found solution with cost 54.1
+/planner_0 found solution with cost 54.1
+/planner_2 found solution with cost 56.44
+/controller_1 v 0.632 w 0.048 e_rho -0.289 e_phi -0.671 angle(v) 175.0
+/controller_0 v 0.333 w -0.211 e_rho 0.357 e_phi -4.516 angle(v) 6.0
+/controller_3 v 0.459 w 0.146 e_rho -0.199 e_phi -2.571 angle(v) -47.0
+/controller_2 v 0.515 w 0.112 e_rho 0.004 e_phi -0.297 angle(v) -145.0
+/controller_4 v 0.944 w 0.007 e_rho 0.075 e_phi 5.388 angle(v) -17.0
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_3 won consensus of iteration # 333.0 with cost 66.103622696
+
+/planner_1 found solution with cost 72.18
+/planner_0 found solution with cost 68.0
+/planner_2 found solution with cost 64.77
+	/planner_2 I'm ok with the prior map now!
+/planner_3 won consensus of iteration # 334.0 with cost 66.103622696
+
+/planner_0 found solution with cost 60.77
+/controller_3 v 0.312 w 0.069 e_rho -0.119 e_phi -3.107 angle(v) -10.0
+/controller_4 v 0.585 w 0.104 e_rho 0.061 e_phi 0.238 angle(v) 31.0
+/controller_1 v 0.048 w -0.082 e_rho 0.092 e_phi -5.714 angle(v) 116.0
+/controller_2 v 0.97 w -0.248 e_rho 0.166 e_phi 4.098 angle(v) -120.0
+/controller_0 v 0.804 w 0.025 e_rho -0.043 e_phi 1.421 angle(v) 113.0
+/planner_1 found solution with cost 57.44
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_1 won consensus of iteration # 335.0 with cost 57.436956038
+
+/planner_3 found solution with cost 61.1
+/planner_0 found solution with cost 69.1
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_4 the prior map is bad!
+/planner_1 won consensus of iteration # 336.0 with cost 55.436956038
+
+/planner_0 found solution with cost 53.44
+/planner_4 found solution with cost 53.44
+/planner_3 found solution with cost 54.47
+/controller_1 v 0.565 w 0.131 e_rho -0.164 e_phi -0.843 angle(v) -120.0
+/controller_0 v 0.419 w 0.008 e_rho 0.021 e_phi -1.587 angle(v) 149.0
+/controller_3 v 0.574 w -0.054 e_rho 0.188 e_phi 0.122 angle(v) -17.0
+/controller_2 v 0.778 w 0.107 e_rho -0.198 e_phi 0.679 angle(v) -55.0
+/controller_4 v 0.525 w -0.051 e_rho 0.143 e_phi -0.696 angle(v) 59.0
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_1 won consensus of iteration # 337.0 with cost 65.436956038
+
+/planner_3 found solution with cost 58.94
+/planner_0 found solution with cost 61.27
+/planner_4 found solution with cost 64.6
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_0 won consensus of iteration # 338.0 with cost 61.2702931065
+
+/controller_1 v 0.532 w -0.471 e_rho 0.081 e_phi 1.929 angle(v) -111.0
+/controller_2 v 0.381 w -0.006 e_rho 0.024 e_phi -2.291 angle(v) -33.0
+/controller_4 v 0.718 w 0.156 e_rho -0.135 e_phi 1.171 angle(v) 121.0
+/controller_0 v 0.336 w -0.008 e_rho 0.048 e_phi -2.843 angle(v) -180.0
+/controller_3 v 0.598 w 0.074 e_rho -0.023 e_phi -0.09 angle(v) 43.0
+/planner_3 found solution with cost 59.27
+/planner_4 found solution with cost 62.6
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_0 won consensus of iteration # 339.0 with cost 59.2702931065
+
+/planner_3 found solution with cost 62.87
+/planner_1 found solution with cost 57.27
+/planner_4 found solution with cost 327.31
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_1 won consensus of iteration # 340.0 with cost 57.2702893634
+
+/planner_0 found solution with cost 64.94
+/controller_1 v 0.42 w 0.19 e_rho 0.065 e_phi -1.304 angle(v) -73.0
+/controller_0 v -0.034 w 0.109 e_rho -0.112 e_phi -5.932 angle(v) -41.0
+/controller_3 v 0.478 w 0.016 e_rho -0.122 e_phi -1.638 angle(v) 95.0
+/controller_2 v 0.525 w 0.023 e_rho -0.165 e_phi -1.378 angle(v) 28.0
+/controller_4 v 0.688 w 0.067 e_rho -0.031 e_phi 0.818 angle(v) 150.0
+/planner_4 found solution with cost 55.27
+/planner_3 found solution with cost 64.94
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 341.0 with cost 55.2702844974
+
+/planner_0 found solution with cost 53.27
+/planner_1 found solution with cost 55.02
+/planner_3 found solution with cost 53.27
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_3 I'm ok with the prior map now!
+	/planner_1 I'm ok with the prior map now!
+/planner_4 won consensus of iteration # 342.0 with cost 53.2702844974
+
+/planner_0 found solution with cost 51.27
+/controller_0 v 0.394 w 0.358 e_rho -0.472 e_phi -4.194 angle(v) -31.0
+/controller_3 v -0.085 w -0.235 e_rho 0.182 e_phi -7.68 angle(v) 0.0
+/controller_2 v 0.844 w 0.103 e_rho 0.263 e_phi 3.102 angle(v) 19.0
+/controller_4 v 0.861 w -0.065 e_rho -0.231 e_phi 1.395 angle(v) -151.0
+/controller_1 v 1.476 w 0.02 e_rho -0.319 e_phi 6.323 angle(v) -30.0
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 343.0 with cost 63.2702844974
+
+/planner_0 found solution with cost 53.13
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 344.0 with cost 63.2702844974
+
+/planner_0 found solution with cost 52.27
+/controller_2 v 0.357 w 0.134 e_rho 0.097 e_phi -2.072 angle(v) 59.0
+/controller_1 v 0.907 w 0.286 e_rho -0.242 e_phi 2.101 angle(v) 14.0
+/controller_4 v -0.013 w 0.137 e_rho -0.13 e_phi -6.447 angle(v) -17.0
+/controller_0 v 0.604 w -0.095 e_rho -0.182 e_phi -0.589 angle(v) -50.0
+/controller_3 v 0.603 w 0.502 e_rho 0.029 e_phi 1.897 angle(v) 147.0
+/planner_4 won consensus of iteration # 345.0 with cost 63.2702844974
+
+/planner_0 found solution with cost 52.27
+/planner_1 found solution with cost 52.27
+/planner_1 won consensus of iteration # 346.0 with cost 52.2702861129
+
+/controller_2 v 0.679 w 0.013 e_rho -0.077 e_phi 0.575 angle(v) 118.0
+/controller_3 v 0.538 w 0.057 e_rho 0.008 e_phi -0.64 angle(v) -174.0
+/controller_4 v 0.645 w 0.034 e_rho 0.01 e_phi 0.57 angle(v) -105.0
+/controller_0 v 0.656 w 0.089 e_rho -0.02 e_phi 0.505 angle(v) -30.0
+/controller_1 v 0.525 w 0.06 e_rho -0.038 e_phi -0.834 angle(v) 46.0
+/planner_0 found solution with cost 50.27
+/planner_4 found solution with cost 50.27
+/planner_1 won consensus of iteration # 347.0 with cost 62.2702861129
+
+/planner_0 found solution with cost 51.27
+/planner_4 found solution with cost 51.27
+/planner_1 won consensus of iteration # 348.0 with cost 50.2702861129
+
+/planner_4 found solution with cost 48.27
+/planner_0 found solution with cost 48.27
+/controller_4 v 0.589 w 0.101 e_rho -0.119 e_phi -0.48 angle(v) -53.0
+/controller_1 v 0.607 w 0.084 e_rho -0.164 e_phi -0.544 angle(v) 97.0
+/controller_0 v 0.684 w 0.156 e_rho 0.021 e_phi 1.115 angle(v) 5.0
+/controller_3 v 0.448 w 0.02 e_rho -0.035 e_phi -1.617 angle(v) -126.0
+/controller_2 v 0.478 w 0.085 e_rho 0.047 e_phi -1.042 angle(v) 151.0
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_1 won consensus of iteration # 349.0 with cost 48.2702861129
+
+/planner_4 found solution with cost 46.27
+/planner_0 found solution with cost 46.27
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_1 won consensus of iteration # 350.0 with cost 46.2702861129
+
+/planner_4 found solution with cost 44.27
+/controller_3 v 0.79 w 0.218 e_rho -0.466 e_phi -0.306 angle(v) -63.0
+/controller_1 v -0.028 w 0.747 e_rho 0.204 e_phi 2.255 angle(v) 112.0
+/controller_0 v 0.788 w 0.036 e_rho 0.344 e_phi 2.496 angle(v) 14.0
+/controller_2 v 0.332 w 0.008 e_rho -0.267 e_phi -4.415 angle(v) -101.0
+/controller_4 v 1.8 w 0.118 e_rho -0.172 e_phi 11.713 angle(v) -36.0
+/planner_0 found solution with cost 44.27
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_0 won consensus of iteration # 351.0 with cost 44.2702868195
+
+/planner_4 found solution with cost 46.32
+/planner_1 found solution with cost 42.5
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_0 won consensus of iteration # 352.0 with cost 42.2702868195
+
+/planner_4 found solution with cost 40.27
+/planner_1 found solution with cost 40.27
+/controller_0 v 0.522 w 0.024 e_rho -0.308 e_phi -1.211 angle(v) 123.0
+/controller_4 v 0.067 w 0.678 e_rho 0.002 e_phi -0.704 angle(v) 14.0
+/controller_1 v 0.735 w 0.042 e_rho 0.081 e_phi 0.609 angle(v) 145.0
+/controller_2 v 0.702 w 0.255 e_rho -0.365 e_phi -0.167 angle(v) -101.0
+/controller_3 v 0.439 w -0.234 e_rho 0.243 e_phi 0.132 angle(v) -94.0
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 353.0 with cost 40.2702886474
+
+/planner_1 found solution with cost 40.18
+/planner_0 found solution with cost 38.39
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 354.0 with cost 38.2702886474
+
+/controller_2 v 0.676 w 0.031 e_rho 0.153 e_phi 2.985 angle(v) -113.0
+/controller_4 v 0.348 w -0.077 e_rho -0.29 e_phi -3.979 angle(v) 116.0
+/controller_1 v 0.951 w 0.104 e_rho -0.363 e_phi 0.161 angle(v) -147.0
+/controller_0 v 0.773 w -0.073 e_rho -0.261 e_phi 1.429 angle(v) 138.0
+/controller_3 v 0.618 w 0.117 e_rho 0.556 e_phi -3.119 angle(v) -80.0
+/planner_0 found solution with cost 36.27
+/planner_1 found solution with cost 39.51
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 355.0 with cost 36.2702886474
+
+/planner_0 found solution with cost 34.73
+/planner_1 found solution with cost 41.29
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 356.0 with cost 34.2702886474
+
+/planner_0 found solution with cost 32.27
+/planner_3 found solution with cost 32.27
+/controller_4 v 0.455 w 0.099 e_rho 0.317 e_phi -2.139 angle(v) 44.0
+/controller_1 v 0.158 w 0.484 e_rho -0.451 e_phi -4.227 angle(v) -62.0
+/controller_0 v 0.735 w 0.08 e_rho -0.151 e_phi 0.983 angle(v) 172.0
+/controller_2 v 1.021 w 0.185 e_rho 0.046 e_phi 4.285 angle(v) -68.0
+/controller_3 v 0.554 w -0.046 e_rho 0.063 e_phi -0.181 angle(v) 3.0
+/planner_1 found solution with cost 32.27
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 won consensus of iteration # 357.0 with cost 32.2702886474
+
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_4 obstacle detected, deleting RRT
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_3 won consensus of iteration # 358.0 with cost 32.2702882587
+
+/planner_0 found solution with cost 31.27
+/planner_3 found solution with cost 33.25
+/planner_4 found solution with cost 31.27
+/controller_4 v 0.275 w 0.08 e_rho 0.132 e_phi -3.278 angle(v) 104.0
+/controller_0 v 0.504 w -0.142 e_rho -0.317 e_phi -2.346 angle(v) -117.0
+/controller_1 v 0.726 w 0.315 e_rho -0.533 e_phi -1.461 angle(v) -47.0
+/controller_2 v 0.987 w 0.003 e_rho -0.056 e_phi 3.698 angle(v) -26.0
+/controller_3 v 0.769 w 0.04 e_rho 0.411 e_phi 2.161 angle(v) 13.0
+/planner_1 found solution with cost 37.87
+/planner_2 found solution with cost 35.5
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_3 won consensus of iteration # 359.0 with cost 33.2474045181
+
+/planner_1 found solution with cost 29.27
+/planner_0 found solution with cost 33.57
+/planner_2 found solution with cost 29.27
+/planner_4 found solution with cost 29.43
+/planner_2 won consensus of iteration # 360.0 with cost 29.2702911905
+
+/planner_3 found solution with cost 27.27
+/planner_0 found solution with cost 27.27
+/planner_4 found solution with cost 27.27
+/planner_1 found solution with cost 27.32
+/controller_2 v 0.291 w 0.007 e_rho 0.07 e_phi -3.02 angle(v) 12.0
+/controller_1 v 0.565 w -0.023 e_rho 0.075 e_phi -0.156 angle(v) -60.0
+/controller_0 v 0.779 w -0.022 e_rho 0.009 e_phi 1.789 angle(v) -128.0
+/controller_3 v 0.602 w -0.138 e_rho -0.182 e_phi -0.437 angle(v) 111.0
+/controller_4 v 0.63 w 0.019 e_rho -0.1 e_phi -0.248 angle(v) 172.0
+/planner_3 won consensus of iteration # 361.0 with cost 27.2702871374
+
+/planner_0 found solution with cost 25.27
+/planner_2 found solution with cost 27.6
+/planner_1 found solution with cost 25.27
+/planner_4 found solution with cost 33.76
+/planner_1 won consensus of iteration # 362.0 with cost 25.2702830843
+
+/planner_2 found solution with cost 23.27
+/planner_3 found solution with cost 23.72
+/planner_4 found solution with cost 25.28
+/planner_0 found solution with cost 23.27
+/controller_1 v 0.645 w 0.103 e_rho 0.524 e_phi -2.056 angle(v) -69.0
+/controller_4 v 1.02 w 0.075 e_rho -0.09 e_phi 2.097 angle(v) -161.0
+/controller_3 v 0.334 w -0.044 e_rho -0.097 e_phi -2.759 angle(v) 150.0
+/controller_2 v 0.552 w 0.039 e_rho -0.429 e_phi -2.789 angle(v) 118.0
+/controller_0 v 0.764 w 0.067 e_rho 0.096 e_phi 3.88 angle(v) -106.0
+	/planner_0 I'm ok with the prior map now!
+/planner_2 won consensus of iteration # 363.0 with cost 23.2702790312
+
+/planner_3 found solution with cost 21.27
+/planner_4 found solution with cost 21.44
+/planner_1 found solution with cost 21.43
+/planner_0 found solution with cost 30.81
+/planner_2 won consensus of iteration # 364.0 with cost 21.2702790312
+
+/planner_3 found solution with cost 25.64
+/planner_0 found solution with cost 19.27
+/planner_1 found solution with cost 22.26
+/planner_4 found solution with cost 29.92
+/controller_3 v -0.413 w 0.608 e_rho -0.623 e_phi -3.246 angle(v) -125.0
+/controller_1 v 0.652 w 0.028 e_rho -0.017 e_phi 0.002 angle(v) 21.0
+/controller_0 v 0.989 w -0.06 e_rho 0.176 e_phi 5.218 angle(v) -71.0
+/controller_2 v 0.266 w -0.166 e_rho 0.197 e_phi -3.018 angle(v) 63.0
+/controller_4 v 0.577 w 0.065 e_rho -0.3 e_phi -1.586 angle(v) -88.0
+/planner_2 won consensus of iteration # 365.0 with cost 19.2702790312
+
+/planner_3 found solution with cost 17.43
+/planner_4 found solution with cost 20.2
+/planner_1 found solution with cost 20.51
+/planner_0 found solution with cost 22.44
+/planner_2 won consensus of iteration # 366.0 with cost 17.2702790312
+
+/planner_3 found solution with cost 18.16
+/planner_4 found solution with cost 17.6
+/planner_0 found solution with cost 17.56
+/controller_2 v 0.145 w -0.03 e_rho 0.13 e_phi -6.659 angle(v) 20.0
+/controller_4 v 0.775 w -0.007 e_rho -0.294 e_phi -0.414 angle(v) -73.0
+/controller_0 v 0.827 w 0.228 e_rho -0.041 e_phi 3.054 angle(v) -21.0
+/controller_1 v 0.538 w -0.016 e_rho 0.35 e_phi -1.489 angle(v) 16.0
+/controller_3 v 1.8 w 0.8 e_rho -2.111 e_phi 7.297 angle(v) -133.0
+/planner_1 found solution with cost 19.5
+/planner_1 won consensus of iteration # 367.0 with cost 19.4973830308
+
+/planner_3 found solution with cost 13.27
+/planner_4 found solution with cost 15.6
+/planner_2 found solution with cost 13.27
+/planner_0 found solution with cost 17.88
+/planner_1 won consensus of iteration # 368.0 with cost 17.4973830308
+
+/planner_3 found solution with cost 11.43
+/planner_2 found solution with cost 14.04
+/planner_4 found solution with cost 11.27
+/planner_0 found solution with cost 11.43
+/controller_4 v 0.644 w 0.011 e_rho 0.022 e_phi 0.156 angle(v) -60.0
+/controller_3 v 0.936 w -0.351 e_rho -0.101 e_phi 3.678 angle(v) -133.0
+/controller_2 v 0.544 w 0.171 e_rho -0.271 e_phi -1.245 angle(v) -171.0
+/controller_0 v 0.289 w 0.027 e_rho 0.147 e_phi -2.892 angle(v) -11.0
+/controller_1 v 0.428 w 0.355 e_rho -0.132 e_phi -1.552 angle(v) 105.0
+/planner_0 won consensus of iteration # 369.0 with cost 11.4286971261
+/planner_3 found solution with cost 13.86
+
+/planner_2 found solution with cost 9.43
+/planner_4 found solution with cost 9.43
+/planner_1 found solution with cost 15.07
+/planner_0 won consensus of iteration # 370.0 with cost 9.42869712613
+
+/planner_4 found solution with cost 7.43
+/planner_3 found solution with cost 15.43
+/planner_2 found solution with cost 7.43
+/planner_1 found solution with cost 7.43
+/controller_0 v 0.325 w 0.096 e_rho 0.157 e_phi -2.785 angle(v) 30.0
+/controller_1 v 0.771 w 0.087 e_rho -0.387 e_phi -0.526 angle(v) 158.0
+/controller_2 v 0.643 w 0.063 e_rho -0.142 e_phi 0.261 angle(v) -153.0
+/controller_4 v 0.407 w -0.043 e_rho 0.176 e_phi -1.563 angle(v) -43.0
+/controller_3 v 0.87 w 0.086 e_rho 0.099 e_phi 2.285 angle(v) -103.0
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_0 won consensus of iteration # 371.0 with cost 7.42869712613
+/planner_3 found solution with cost 10.71
+/planner_1 found solution with cost 8.26
+
+/planner_2 found solution with cost 8.26
+/planner_4 found solution with cost 9.83
+	/planner_1 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_0 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_4 seems like the group is stuck, make the safety marging a little bit smaller
+/planner_0 won consensus of iteration # 372.0 with cost 7.42869712613
+/planner_3 found solution with cost 6.87
+
+/controller_3 paused
+/planner_2 found solution with cost 11.7
+/controller_4 paused
+/controller_0 paused
+/controller_2 paused
+/controller_1 paused
+/controller_3 GOAL REACHED
+/planner_1 found solution with cost 11.95
+	/planner_3 seems like the group is stuck, make the safety marging a little bit smaller
+	/planner_2 seems like the group is stuck, make the safety marging a little bit smaller
+/controller_1 paused
+/controller_0 paused
+/controller_3 paused
+/controller_4 paused
+/controller_2 paused
+^C[controller_4-20] killing on exit
+[controller_2-18] killing on exit
+[controller_1-17] killing on exit
+[controller_0-16] killing on exit
+[consensus_4-15] killing on exit
+[consensus_3-14] killing on exit
+[consensus_2-13] killing on exit
+[consensus_1-12] killing on exit
+[consensus_0-11] killing on exit
+[controller_3-19] killing on exit
+[planner_4-10] killing on exit
+[planner_3-9] killing on exit
+[planner_2-8] killing on exit
+[planner_0-6] killing on exit
+[planner_1-7] killing on exit
+[map_server_4-5] killing on exit
+[map_server_3-4] killing on exit
+[map_server_2-3] killing on exit
+[map_server_1-2] killing on exit
+[map_server_0-1] killing on exit

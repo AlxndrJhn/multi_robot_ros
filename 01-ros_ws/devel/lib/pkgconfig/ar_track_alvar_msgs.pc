@@ -1,0 +1,8 @@
+prefix=/home/alexj/Dropbox/UFMG/04-2-2016/JornalPaper/02-code/01-ros_ws/devel
+
+Name: ar_track_alvar_msgs
+Description: Description of ar_track_alvar_msgs
+Version: 0.5.1
+Cflags: -I/home/alexj/Dropbox/UFMG/04-2-2016/JornalPaper/02-code/01-ros_ws/devel/include
+Libs: -L/home/alexj/Dropbox/UFMG/04-2-2016/JornalPaper/02-code/01-ros_ws/devel/lib 
+Requires: message_runtime std_msgs geometry_msgs

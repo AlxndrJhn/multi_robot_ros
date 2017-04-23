@@ -1,0 +1,8 @@
+prefix=/home/alexj/Dropbox/UFMG/04-2-2016/JornalPaper/02-code/01-ros_ws/devel
+
+Name: agent
+Description: Description of agent
+Version: 0.0.0
+Cflags: -I/home/alexj/Dropbox/UFMG/04-2-2016/JornalPaper/02-code/01-ros_ws/devel/include
+Libs: -L/home/alexj/Dropbox/UFMG/04-2-2016/JornalPaper/02-code/01-ros_ws/devel/lib 
+Requires: roscpp rospy std_msgs message_runtime tf

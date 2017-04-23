@@ -1,0 +1,123 @@
+<launch>
+    <!-- Fundamental ROS parameters -->
+    <param name="simulated_robots" value="true"/>
+    <param name="simulator_factor" value="10.0"/>
+    <param name="EXPNUM" value="3"/>
+
+    <node name="morse" pkg="agent" type="start_morse.sh" />
+    <!--<node name="morse" pkg="agent" type="start_morse.sh" output="screen"/> <node pkg="semantic_turtle_test" type="timed_roslaunch.sh" 
+    args="2 turtlebot_navigation amcl_demo.launch initial_pose_x:=17.0 initial_pose_y:=$(arg initial_pose_y)" 
+    name="timed_roslaunch" output="screen">-->
+
+    <!-- Map servers -->
+    <node name="map_server_0" pkg="agent" type="map_server_node.py" output="screen">
+        <param name="ID" type="int" value="0" />
+    </node>
+    
+    <node name="map_server_1" pkg="agent" type="map_server_node.py" output="screen">
+        <param name="ID" type="int" value="1" />
+    </node>
+    
+    <node name="map_server_2" pkg="agent" type="map_server_node.py" output="screen">
+        <param name="ID" type="int" value="2" />
+    </node>
+    
+    <node name="map_server_3" pkg="agent" type="map_server_node.py" output="screen">
+        <param name="ID" type="int" value="3" />
+    </node>
+    
+    <node name="map_server_4" pkg="agent" type="map_server_node.py" output="screen">
+        <param name="ID" type="int" value="4" />
+    </node>
+    
+    <!-- Planners -->
+    <node name="planner_0" pkg="agent" type="planner_node.py" output="screen">
+        <param name="ID" type="int" value="0" />
+    </node>
+    
+    <node name="planner_1" pkg="agent" type="planner_node.py" output="screen">
+        <param name="ID" type="int" value="1" />
+    </node>
+    
+    <node name="planner_2" pkg="agent" type="planner_node.py" output="screen">
+        <param name="ID" type="int" value="2" />
+    </node>
+    
+    <node name="planner_3" pkg="agent" type="planner_node.py" output="screen">
+        <param name="ID" type="int" value="3" />
+    </node>
+    
+    <node name="planner_4" pkg="agent" type="planner_node.py" output="screen">
+        <param name="ID" type="int" value="4" />
+    </node>
+    
+    <!-- Consensus Nodes -->
+    <node name="consensus_0" pkg="agent" type="consensus_node.py" output="screen">
+        <param name="ID" type="int" value="0" />
+    </node>
+    
+    <node name="consensus_1" pkg="agent" type="consensus_node.py" output="screen">
+        <param name="ID" type="int" value="1" />
+    </node>
+    
+    <node name="consensus_2" pkg="agent" type="consensus_node.py" output="screen">
+        <param name="ID" type="int" value="2" />
+    </node>
+    
+    <node name="consensus_3" pkg="agent" type="consensus_node.py" output="screen">
+        <param name="ID" type="int" value="3" />
+    </node>
+    
+    <node name="consensus_4" pkg="agent" type="consensus_node.py" output="screen">
+        <param name="ID" type="int" value="4" />
+    </node>
+    
+    
+    <!--Controllers -->
+    <node name="controller_0" pkg="agent" type="controller_node.py" output="screen">
+        <param name="ID" type="int" value="0" />
+    </node>
+
+    <node name="controller_1" pkg="agent" type="controller_node.py" output="screen">
+        <param name="ID" type="int" value="1" />
+    </node>
+
+    <node name="controller_2" pkg="agent" type="controller_node.py" output="screen">
+        <param name="ID" type="int" value="2" />
+    </node>
+
+    <node name="controller_3" pkg="agent" type="controller_node.py" output="screen">
+        <param name="ID" type="int" value="3" />
+    </node>
+
+    <node name="controller_4" pkg="agent" type="controller_node.py" output="screen">
+        <param name="ID" type="int" value="4" />
+    </node>
+
+    
+    
+    
+    
+    
+
+    <!--<include file="$(find turtlebot_ds)/launch/single_robot.launch">-->
+    <!--<arg name="robot_id" value="Robot5"/>-->
+    <!--<arg name="robot_pose" value="-x 4.5 -y 0.0 -z 0"/>-->
+    <!--</include>-->
+
+    <!--<include file="$(find turtlebot_ds)/launch/single_robot.launch">-->
+    <!--<arg name="robot_id" value="Robot6"/>-->
+    <!--<arg name="robot_pose" value="-x -4.5 -y 0.0 -z 0"/>-->
+    <!--</include>-->
+
+    <!--<include file="$(find turtlebot_ds)/launch/single_robot.launch">-->
+    <!--<arg name="robot_id" value="Robot7"/>-->
+    <!--<arg name="robot_pose" value="-x 0.0 -y 3.5 -z 0"/>-->
+    <!--</include>-->
+
+    <!--<include file="$(find turtlebot_ds)/launch/single_robot.launch">-->
+    <!--<arg name="robot_id" value="Robot8"/>-->
+    <!--<arg name="robot_pose" value="-x 0.0 -y -3.5 -z 0"/>-->
+    <!--</include>-->
+</launch>
+

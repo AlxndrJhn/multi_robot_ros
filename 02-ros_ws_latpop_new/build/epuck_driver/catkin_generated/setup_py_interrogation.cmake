@@ -1,0 +1,6 @@
+set(epuck_driver_SETUP_PY_VERSION "0.1.0")
+set(epuck_driver_SETUP_PY_SCRIPTS "")
+set(epuck_driver_SETUP_PY_PACKAGES "epuck")
+set(epuck_driver_SETUP_PY_PACKAGE_DIRS "src/epuck")
+set(epuck_driver_SETUP_PY_MODULES "")
+set(epuck_driver_SETUP_PY_MODULE_DIRS "")

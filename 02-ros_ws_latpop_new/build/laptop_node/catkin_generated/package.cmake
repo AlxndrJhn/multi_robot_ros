@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "laptop_node")
+set(laptop_node_MAINTAINER "Your Name <you@yourdomain.tld>")
+set(laptop_node_DEPRECATED "")
+set(laptop_node_VERSION "0.1.0")
+set(laptop_node_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
+set(laptop_node_RUN_DEPENDS "roscpp" "rospy" "std_msgs")
+set(laptop_node_BUILDTOOL_DEPENDS "catkin")
